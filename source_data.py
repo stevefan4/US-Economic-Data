@@ -48,13 +48,20 @@ FRED_SERIES_EXTENDED = {
     "Conf Brd Consumer Confidence": "CONCCONF",
 
     # Consumer - Financial Health
+    "Real Personal Income": "RPI", 
+    "Real Disposable Personal Income": "DSPIC96", 
+    "Personal Savings Rate": "PSAVERT", 
     "Total Consumer Credit Outstanding": "TOTALSL",
     "Revolving Credit": "REVOLSL",
     "Debt Service Ratio": "TDSP",
+    "Household Debt to GDP": "HDTGPDUSQ163N", 
     "Credit Card Delinquency Rate": "DRCCLACBS",
     "Auto Loan Delinquency Rate": "DRALACBS",
+    "Mortgage Delinquency Rate": "DRSFRMACBS", 
     "Household Net Worth": "TNWBSHNO",
-    
+    "Household Real Estate Assets": "OEHRENWBSHNO", 
+    "Household Retirement Assets": "BOGZ1FL153050015Q", 
+
     # Businesses - Performance
     "Business Revenue & Sales": "TOTBUSAMT",
     "Corporate Profits": "CP",
@@ -65,12 +72,18 @@ FRED_SERIES_EXTENDED = {
     # Businesses - Investment
     "Private Fixed Investment": "FPI",
     "Business Spending": "PNFI",
+    "New Orders for Capital Goods": "ATCGNO", 
+    "Non-resedential Construction Spending": "TLNRESCONS", 
 
     # Businesses - Financing
     "Corporate Debt Outstanding": "TCMDODNS",
+    "Corporate Bond Yields & Spreads": "BAMLH0A0HYM2", 
+    "Bank Lending to Businesses": "BUSLOANS", 
+    "Commercial Loan Delinquency Rate": "DRBLACBS", 
 
     # Businesses - Confidence
     
+
     # Government
     "Total Tax Revenue": "FGRECPT",
     "Federal Budget Deficit": "FYFSD",
@@ -133,43 +146,7 @@ Economic Activity:
           - UMich Expectations
           - Conf Brd Expectations
           - NY Fed Consumer Expectations
-      Financial Health: 
-        Income: 
-          - Real Personal Income
-          - Real Disposable Personal Income
-        Savings:
-          - Personal Savings Rate 
-        Credit Availability and Debt Burden: 
-          - Total Consumer Credit Outstanding
-          - Revolving Credit
-          - Non-Revolving Credit
-          - Debt Service Ratio
-          - Household Debt to GDP
-        Delinquencies: 
-          - Credit Cards Delinquency Rate
-          - Auto Loan Delinquency Rate
-          - Mortgage Delinquency Rate
-        Wealth: 
-          - Household Net Worth
-          - Household Real Estate Assets 
-          - Retirement Assets
     Businesses: 
-      Performance: 
-        - Business Revenue & Sales
-        - Corporate Profits
-        - NFIB Small Business Performance
-        - Industrial Production 
-        - Capacity Utilization 
-      Investment: 
-        - Private Fixed Investment
-        - Business Spending
-        - New Orders for Capital Goods
-        - Non-resedential Construction Spending
-      Financing: 
-        - Corporate Debt Outstanding
-        - Corporate Bond Yields & Spreads
-        - Bank Lending to Businesses 
-        - Commerical Loan Delinquency Rate
       Confidence:
         Current Conditions: 
           - ISM Manufacturing PMI
@@ -183,8 +160,7 @@ Economic Activity:
           - NFIB Business Outlook 
           - Conf Brd LEI
     Government: 
-      Revenue: 
-        - Total Tax Revenue
+      Revenue:
         - Corporate Tax Receipts
         - Personal Income Tax Receipts
         - Customs Duties & Tariffs Collected
@@ -196,9 +172,6 @@ Economic Activity:
         - Infrastructure & Public Works Spending
         - State & Local Government Spending
       Deficit: 
-        - Federal Budget Deficit
-        - Federal Debt % GDP 
-        - Total Federal Govt Debt Outstanding
         - State and Local Govt Debt Outstanding
       Monetary & Fiscal Policy: 
         - Fed Funds Rate 
