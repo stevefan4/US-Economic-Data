@@ -1,57 +1,59 @@
 Series Name,FRED Series ID,Survey Source
-Total Employment,PAYEMS,BLS - Establishment Survey
-Temporary Employment,TEMPHEL,BLS - Establishment Survey
-Non-Farm Payrolls,PAYEMS,BLS - Establishment Survey
-Multiple Jobholders,LNS12026620,BLS - Household Survey
-Unemployment Rate,UNRATE,BLS - Household Survey
-Underemployment Rate,U6RATE,BLS - Household Survey
-Duration of Unemployment,UEMPMEAN,BLS - Household Survey
-Initial Jobless Claims,ICSA,DOL - Unemployment Insurance Weekly Claims
-Continuing Jobless Claims,CCSA,DOL - Unemployment Insurance Weekly Claims
-Total Labor Force,CLF16OV,BLS - Household Survey
-Labor Force Participation Rate,CIVPART,BLS - Household Survey
-Productivity,OPHNFB,BLS - Productivity and Costs
-Weekly Hours Worked,AWHAETP,BLS - Establishment Survey
-Total Job Openings,JTSJOL,BLS - JOLTS
-Quits Rate,JTSQUR,BLS - JOLTS
-Layoff Rate,JTSLDL,BLS - JOLTS
-Hires Rate,JTSHIR,BLS - JOLTS
-NFIB Job Openings,NFIBJOBS,NFIB Small Business Survey
-Jobs Plentiful - Jobs Hard to Get,CSCICP03USM665S,Conference Board Consumer Confidence
+ADP Jobs Added,ADP,ADP National Employment Report
+ISM Mfg. Employment,ISMEMP,ISM Manufacturing Survey
+ISM Svcs. Employment,NAPMEI,ISM Services Survey
+Challenger Hiring Announcements,CHALLENGER_HIRING,"Challenger, Gray & Christmas Report"
+Challenger Layoff Announcements,CHALLENGER_LAYOFFS,"Challenger, Gray & Christmas Report"
+NFIB Avg Change in Employment,NFIBEMPCHG,NFIB Small Business Survey
+NFIB Actual Employment Changes,NFIBACT,NFIB Small Business Survey
+NFIB Hirings Plans,NFIBHIRPL,NFIB Small Business Survey
+NFIB Jobs Openings,NFIBJOBS,NFIB Small Business Survey
+NFIB % Positions Not Able to Fill,NFIBJOBSNT,NFIB Small Business Survey
+More Jobs - Fewer Jobs (6 months hence),CSCICP03USM665S,Conference Board Consumer Confidence
+Probability of Finding Job if Fired,NYFED_PROB_JOB,NY Fed Survey of Consumer Expectations
+UMich Current Economic Conditions,UMCSENTCUR,University of Michigan Consumer Sentiment Survey
+UMich Expectations,UMCSL,University of Michigan Consumer Sentiment Survey
+Conf Brd Expectations,CSCICP03USM665S,Conference Board Consumer Confidence
+NY Fed Consumer Expectations,NYFED_CONEXP,NY Fed Survey of Consumer Expectations
+ISM Manufacturing PMI,ISMPMI,ISM Manufacturing Survey
+ISM Services PMI,NAPM,ISM Services Survey
+NFIB Small Business Optimism,NFIBOPT,NFIB Small Business Survey
+CEO Confidence,CEO_CONF,Conference Board CEO Confidence Survey
+"Business Conditions Survey (Richmond, Dallas, Philly)",FED_BUSINESS_COND,Federal Reserve Regional Surveys
+ISM Mfg New Orders,NAPMNOI,ISM Manufacturing Survey
+ISM Svcs New Orders,NAPMNEWO,ISM Services Survey
+NFIB Business Outlook,NFIBOUT,NFIB Small Business Survey
+Conf Brd LEI,USLEI,Conference Board Leading Economic Index
+Corporate Tax Receipts,FGEXPND_CORP,Treasury - Monthly Treasury Statement
+Personal Income Tax Receipts,FGEXPND_PERS,Treasury - Monthly Treasury Statement
+Customs Duties & Tariffs Collected,USCUSTDUTIES,Treasury - Monthly Treasury Statement
+State & Local Government Tax Revenue,SALTAX,Census Bureau - State & Local Government Finances
+Total Federal Spending,FGEXPND,Treasury - Monthly Treasury Statement
+Defense Spending,DEFEXP,Treasury - Monthly Treasury Statement
+Social Security & Medicare Expenditures,W823RC1,Treasury - Monthly Treasury Statement
+Infrastructure & Public Works Spending,INFRA_SPENDING,Census Bureau - Construction Spending
+State & Local Government Spending,SLOCGOVEXP,Census Bureau - State & Local Government Finances
+State and Local Govt Debt Outstanding,SLGSDODNS,Federal Reserve - Financial Accounts
+Fed Funds Rate,FEDFUNDS,Federal Reserve - Interest Rates
+Money Supply,M2SL,Federal Reserve - Money Supply
+Fed Balance Sheet,WALCL,Federal Reserve - H.4.1 Release
+US 10Yr Yld,DGS10,Federal Reserve - Interest Rates
+US 10Yr - 2Yr Spread,T10Y2Y,Federal Reserve - Interest Rates
+Government Investment in Infrastructure,GOVINFRA,Census Bureau - Construction Spending
+Federal R&D Spending,FEDRND,NSF - National Science Foundation
+State & Local Capital Investment in Public Services,SLG_CAPINV,Census Bureau - State & Local Government Finances
+CPI,CPIAUCSL,BLS - Consumer Price Index
+Core CPI,CPILFESL,BLS - Consumer Price Index
 PCE,PCE,BEA - Personal Income and Outlays
-Retail Sales,RSXFS,Census Bureau - Retail Sales
-Durable Goods,DGORDER,"Census Bureau - Manufacturers’ Shipments, Inventories, and Orders"
-Non-Durable Goods,ANDPCE,BEA - Personal Income and Outlays
-Services,PCES,BEA - Personal Income and Outlays
-UMich Sentiment,UMCSENT,University of Michigan Consumer Sentiment Survey
-Conf Brd Consumer Confidence,CONCCONF,Conference Board Consumer Confidence
-Real Personal Income,RPI,BEA - Personal Income and Outlays
-Real Disposable Personal Income,DSPIC96,BEA - Personal Income and Outlays
-Personal Savings Rate,PSAVERT,BEA - Personal Income and Outlays
-Total Consumer Credit Outstanding,TOTALSL,Federal Reserve - Consumer Credit
-Revolving Credit,REVOLSL,Federal Reserve - Consumer Credit
-Debt Service Ratio,TDSP,Federal Reserve - Financial Obligations Ratio
-Household Debt to GDP,HDTGPDUSQ163N,Federal Reserve - Financial Accounts
-Credit Card Delinquency Rate,DRCCLACBS,Federal Reserve - Charge-Off and Delinquency Rates
-Auto Loan Delinquency Rate,DRALACBS,Federal Reserve - Charge-Off and Delinquency Rates
-Mortgage Delinquency Rate,DRSFRMACBS,Federal Reserve - Mortgage Delinquency Rates
-Household Net Worth,TNWBSHNO,Federal Reserve - Financial Accounts
-Household Real Estate Assets,OEHRENWBSHNO,Federal Reserve - Financial Accounts
-Household Retirement Assets,BOGZ1FL153050015Q,Federal Reserve - Financial Accounts
-Business Revenue & Sales,TOTBUSAMT,BEA - GDP & Business Indicators
-Corporate Profits,CP,BEA - GDP & Business Indicators
-NFIB Small Business Performance,NFIBOPT,NFIB Small Business Survey
-Industrial Production,INDPRO,Federal Reserve - Industrial Production
-Capacity Utilization,TCU,Federal Reserve - Industrial Production
-Private Fixed Investment,FPI,BEA - GDP & Business Indicators
-Business Spending,PNFI,BEA - GDP & Business Indicators
-New Orders for Capital Goods,ATCGNO,"Census Bureau - Manufacturers’ Shipments, Inventories, and Orders"
-Non-resedential Construction Spending,TLNRESCONS,Census Bureau - Construction Spending
-Corporate Debt Outstanding,TCMDODNS,Federal Reserve - Financial Accounts
-Corporate Bond Yields & Spreads,BAMLH0A0HYM2,ICE BofA Bond Indices
-Bank Lending to Businesses,BUSLOANS,Federal Reserve - H.8 Report
-Commercial Loan Delinquency Rate,DRBLACBS,Federal Reserve - Charge-Off and Delinquency Rates
-Total Tax Revenue,FGRECPT,Treasury - Monthly Treasury Statement
-Federal Budget Deficit,FYFSD,Treasury - Monthly Treasury Statement
-Federal Debt % GDP,GFDEGDQ188S,Federal Reserve - Financial Accounts
-Total Federal Govt Debt Outstanding,GFDEBTN,Treasury - Monthly Treasury Statement
+Core PCE,PCEPILFE,BEA - Personal Income and Outlays
+CPI Housing Component,CPIHOUS,BLS - Consumer Price Index
+PPI,PPIACO,BLS - Producer Price Index
+Core PPI,PPIFES,BLS - Producer Price Index
+Labor Costs (Wages),ECIWAG,BLS - Employment Cost Index
+Commodities (BCOM),BCOM,Bloomberg Commodity Index
+UMich 1Yr Inflation Expectations,MICH1YINFL,University of Michigan Consumer Sentiment Survey
+UMICH 5Yr Inflation Expectations,MICH5YINFL,University of Michigan Consumer Sentiment Survey
+NY Fed Inflation Expectations,NYFEDINFLEXP,NY Fed Survey of Consumer Expectations
+5Yr Breakeven,T5YIE,Federal Reserve - Interest Rates
+10Yr Breakeven,T10YIE,Federal Reserve - Interest Rates
+5Yr5Yr Forward Breakeven,T5YIFR,Federal Reserve - Interest Rates
