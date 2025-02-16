@@ -3,15 +3,7 @@ Economic Activity:
     Labor: 
       Employment: 
         - Total Employment
-          - Source: BLS Establishment Survey
-          - Data Provider: FRED
-          - Ticker: PAYEMS
-          - Link: https://fred.stlouisfed.org/series/PAYEMS
         - Temporary Employment
-          - Source: Bureau of Labor Statistics (BLS) - Current Employment Statistics (CES)
-          - Data Provider: Federal Reserve Economic Data (FRED)
-          - Ticker: TEMPHELPS
-          - Link: https://fred.stlouisfed.org/series/PAYEMS
         - Non-Farm Payrolls
         - Multiple Jobholders
         - ADP Jobs Added
@@ -45,8 +37,19 @@ Economic Activity:
         - More Jobs - Fewer Jobs (6 months hence)
         - Probability of Finding Job if Fired
     Consumer: 
-      Spending: 
+      Spending:
+        - PCE
+        - Retail Sales 
       Confidence: 
+        - UMich
+        - Conference Board
+      Financial Health: 
+        - Personal Income and Wages
+        - Savings Rate
+        - Consumer Credit 
+        - Delinquincies 
+        - Wealth and Net Worth
+        - Debt / Assets
     Businesses: 
     Government: 
     Credit: 
