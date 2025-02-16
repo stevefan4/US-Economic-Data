@@ -55,3 +55,61 @@ Total Tax Revenue,FGRECPT,Treasury - Monthly Treasury Statement
 Federal Budget Deficit,FYFSD,Treasury - Monthly Treasury Statement
 Federal Debt % GDP,GFDEGDQ188S,Federal Reserve - Financial Accounts
 Total Federal Govt Debt Outstanding,GFDEBTN,Treasury - Monthly Treasury Statement
+ADP Jobs Added,--,ADP National Employment Report
+ISM Mfg. Employment,--,ISM Manufacturing Survey
+ISM Svcs. Employment,--,ISM Services Survey
+Challenger Hiring Announcements,--,"Challenger, Gray & Christmas Report"
+Challenger Layoff Announcements,--,"Challenger, Gray & Christmas Report"
+NFIB Avg Change in Employment,--,NFIB Small Business Survey
+NFIB Actual Employment Changes,--,NFIB Small Business Survey
+NFIB Hirings Plans,--,NFIB Small Business Survey
+NFIB Jobs Openings,--,NFIB Small Business Survey
+NFIB % Positions Not Able to Fill,--,NFIB Small Business Survey
+More Jobs - Fewer Jobs (6 months hence),--,Conference Board Consumer Confidence
+Probability of Finding Job if Fired,--,NY Fed Survey of Consumer Expectations
+UMich Current Economic Conditions,--,University of Michigan Consumer Sentiment Survey
+UMich Expectations,--,University of Michigan Consumer Sentiment Survey
+Conf Brd Expectations,--,Conference Board Consumer Confidence
+NY Fed Consumer Expectations,--,NY Fed Survey of Consumer Expectations
+ISM Manufacturing PMI,--,ISM Manufacturing Survey
+ISM Services PMI,--,ISM Services Survey
+NFIB Small Business Optimism,--,NFIB Small Business Survey
+CEO Confidence,--,Conference Board CEO Confidence Survey
+"Business Conditions Survey (Richmond, Dallas, Philly)",--,Federal Reserve Regional Surveys
+ISM Mfg New Orders,--,ISM Manufacturing Survey
+ISM Svcs New Orders,--,ISM Services Survey
+NFIB Business Outlook,--,NFIB Small Business Survey
+Conf Brd LEI,--,Conference Board Leading Economic Index
+Corporate Tax Receipts,--,Treasury - Monthly Treasury Statement
+Personal Income Tax Receipts,--,Treasury - Monthly Treasury Statement
+Customs Duties & Tariffs Collected,--,Treasury - Monthly Treasury Statement
+State & Local Government Tax Revenue,--,Census Bureau - State & Local Government Finances
+Total Federal Spending,--,Treasury - Monthly Treasury Statement
+Defense Spending,--,Treasury - Monthly Treasury Statement
+Social Security & Medicare Expenditures,--,Treasury - Monthly Treasury Statement
+Infrastructure & Public Works Spending,--,Census Bureau - Construction Spending
+State & Local Government Spending,--,Census Bureau - State & Local Government Finances
+State and Local Govt Debt Outstanding,--,Federal Reserve - Financial Accounts
+Fed Funds Rate,--,Federal Reserve - Interest Rates
+Money Supply,--,Federal Reserve - Money Supply
+Fed Balance Sheet,--,Federal Reserve - H.4.1 Release
+US 10Yr Yld,--,Federal Reserve - Interest Rates
+US 10Yr - 2Yr Spread,--,Federal Reserve - Interest Rates
+Government Investment in Infrastructure,--,Census Bureau - Construction Spending
+Federal R&D Spending,--,NSF - National Science Foundation
+State & Local Capital Investment in Public Services,--,Census Bureau - State & Local Government Finances
+CPI,--,BLS - Consumer Price Index
+Core CPI,--,BLS - Consumer Price Index
+PCE,--,BEA - Personal Income and Outlays
+Core PCE,--,BEA - Personal Income and Outlays
+CPI Housing Component,--,BLS - Consumer Price Index
+PPI,--,BLS - Producer Price Index
+Core PPI,--,BLS - Producer Price Index
+Labor Costs (Wages),--,BLS - Employment Cost Index
+Commodities (BCOM),--,Bloomberg Commodity Index
+UMich 1Yr Inflation Expectations,--,University of Michigan Consumer Sentiment Survey
+UMICH 5Yr Inflation Expectations,--,University of Michigan Consumer Sentiment Survey
+NY Fed Inflation Expectations,--,NY Fed Survey of Consumer Expectations
+5Yr Breakeven,--,Federal Reserve - Interest Rates
+10Yr Breakeven,--,Federal Reserve - Interest Rates
+5Yr5Yr Forward Breakeven,--,Federal Reserve - Interest Rates
