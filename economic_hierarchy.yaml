@@ -73,10 +73,31 @@ Economic Activity:
           - Household Real Estate Assets 
           - Retirement Assets
     Businesses: 
+      Performance: 
+        - Business Revenue & Sales
+        - Corporate Profits
+        - NFIB Small Business Performance
+        - Industrial Production 
+        - Capacity Utilization 
+      Investment: 
+        - Private Fixed Investment
+        - Business Spending
+        - New Orders for Capital Goods
+        - Non-resedential Construction Spending
+      Financing: 
+        - Corporate Debt Outstanding
+        - Corporate Bond Yields & Spreads
+        - Bank Lending to Businesses 
+        - Commerical Loan Delinquency Rate
+      Confidence:
+        Current Conditions: 
+        Expected Conditions: 
     Government: 
-    Credit: 
-    Financial Markets: 
-    Money Supply: 
+      Revenue: 
+      Spending: 
+      Deficit: 
+      Monetary & Fiscal Policy: 
+      Investment:  
 
   Prices:
     Realized Prices:
