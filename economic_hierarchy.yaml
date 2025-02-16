@@ -8,6 +8,10 @@ Economic Activity:
           - Ticker: PAYEMS
           - Link: https://fred.stlouisfed.org/series/PAYEMS
         - Temporary Employment
+          - Source: Bureau of Labor Statistics (BLS) - Current Employment Statistics (CES)
+          - Data Provider: Federal Reserve Economic Data (FRED)
+          - Ticker: TEMPHELPS
+          - Link: https://fred.stlouisfed.org/series/PAYEMS
         - Non-Farm Payrolls
         - Multiple Jobholders
         - ADP Jobs Added
