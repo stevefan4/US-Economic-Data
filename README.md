@@ -7,7 +7,7 @@ The US Economic Data Project is designed to serve as a comprehensive resource fo
 
 ## Project Goals
 ###  ✔  Organize US economic data into a structured hierarchy, beginning with Real Economic Activity and Prices.
-###  ✔  Aggregate macroeconomic indicators using a structured data hierarchy from reliable public sources (FRED, BEA, BLS, Census Bureau).
+###  ✔  Aggregate macroeconomic indicators using a structured data hierarchy from reliable public sources.
 ###  ✔  Visualize economic drivers and relationships in an interactive dashboards.
 ###  ✔  Automate updates for real-time data tracking, ensuring that users always have access to the latest insights.
 
