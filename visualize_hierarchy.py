@@ -42,5 +42,5 @@ dot.render("economic_hierarchy", format="png")
 print("Hierarchy image saved as 'economic_hierarchy.png'")
 
 # Display the image
-image = Image.open("economic_hierarchy.png")
+image = Image.open("Economic Hierarchy Visual.png")
 display(image)
