@@ -3,6 +3,10 @@ Economic Activity:
     Labor: 
       Employment: 
         - Total Employment
+          - Source: BLS Establishment Survey
+          - Data Provider: FRED
+          - Ticker: PAYEMS
+          - Link: https://fred.stlouisfed.org/series/PAYEMS
         - Temporary Employment
         - Non-Farm Payrolls
         - Multiple Jobholders
