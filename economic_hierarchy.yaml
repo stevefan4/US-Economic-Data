@@ -91,24 +91,65 @@ Economic Activity:
         - Commerical Loan Delinquency Rate
       Confidence:
         Current Conditions: 
+          - ISM Manufacturing PMI
+          - ISM Services PMI
+          - NFIB Small Business Optimism
+          - CEO Confidence
+          - Business Conditions Survey (Richmond, Dallas, Philly) 
         Expected Conditions: 
+          - ISM Mfg New Orders
+          - ISM Svcs New Orders 
+          - NFIB Business Outlook 
+          - Conf Brd LEI
     Government: 
       Revenue: 
-      Spending: 
+        - Total Tax Revenue
+        - Corporate Tax Receipts
+        - Personal Income Tax Receipts
+        - Customs Duties & Tariffs Collected
+        - State & Local Government Tax Revenue
+      Spending:  
+        - Total Federal Spending
+        - Defense Spending
+        - Social Security & Medicare Expenditures 
+        - Infrastructure & Public Works Spending
+        - State & Local Government Spending
       Deficit: 
+        - Federal Budget Deficit
+        - Federal Debt % GDP 
+        - Total Federal Govt Debt Outstanding
+        - State and Local Govt Debt Outstanding
       Monetary & Fiscal Policy: 
+        - Fed Funds Rate 
+        - Money Supply
+        - Fed Balance Sheet
+        - US 10Yr Yld
+        - US 10Yr - 2Yr Spread
       Investment:  
-
+        - Government Investment in Infrastructure
+        - Federal R&D Spending 
+        - State & Local Capital Investment in Public Services 
   Prices:
     Realized Prices:
       Consumers: 
+        - CPI
+        - Core CPI 
+        - PCE 
+        - Core PCE
+        - CPI Housing Component
       Businessses: 
+        - PPI 
+        - Core PPI 
+        - Labor Costs (Wages)
+        - Commodoties (BCOM)
     Price Expectations:
       Survey-Based:
-        - UMich Inflation Expectations
-        - NY Fed Survey
+        - UMich 1Yr Inflation Expectations
+        - UMICH 5Yr Inflation Expectations
+        - NY Fed Inflation Expectations
       Market-Based:
-        - TIPS Breakevens
-        - Inflation Swaps
+        - 5Yr Breakeven 
+        - 10Yr Breakeven
+        - 5Yr5Yr Forward Breakeven
 
 
