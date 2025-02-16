@@ -1,11 +1,54 @@
 Economic Activity:
-  Real Economic Production:
-    Components:
-      - Business Output
-      - Industrial Production
-      - Consumer and Business Activity
-      - Supply Chain Dynamics
+  Real Economic Activity:
+    Labor: 
+      Employment: 
+        - Total Employment
+        - Temporary Employment
+        - Non-Farm Payrolls
+        - Multiple Jobholders
+        - ADP Jobs Added
+        - ISM Mfg. Employment
+        - ISM Svcs. Employment
+        - Challenger Hiring Announcements
+      Unemployment: 
+        - Unemployment Rate
+        - Underemployment Rate
+        - Duration of Unemployment
+        - Initial Jobless Claims
+        - Continuing Jobless Claims
+        - Challenger Layoff Announcements
+      Labor Supply: 
+        - Total Labor Force
+        - Labor Force Participation Rates
+        - Productivity 
+        - Weekly Hours Worked
+      Labor Demand: 
+        - Job Openings
+        - Vacancy Rate
+        - Quits Rate
+        - Layoff Rate
+        - Hirings Rate
+        - NFIB Avg Change in Employment 
+        - NFIB Actual Employment Changes
+        - NFIB Hirings Plans
+        - NFIB % Positions Not Able to Fill
+        - NFIB Job Openings 
+        - Jobs Plentiful - Jobs Hard to Get
+        - More Jobs - Fewer Jobs (6 months hence)
+        - Probability of Finding Job if Fired
+    Consumer: 
+      Spending: 
+      Confidence: 
+    Businesses: 
+    Government: 
+    Credit: 
+    Financial Markets: 
+    Money Supply: 
+
   Prices:
+    Realized Prices:
+      Consumers: 
+      Businessses: 
     Price Expectations:
       Survey-Based:
         - UMich Inflation Expectations
@@ -13,8 +56,5 @@ Economic Activity:
       Market-Based:
         - TIPS Breakevens
         - Inflation Swaps
-    Realized Prices:
-      - Consumer Price Index (CPI)
-      - Producer Price Index (PPI)
-      - Personal Consumption Expenditures (PCE)
+
 
