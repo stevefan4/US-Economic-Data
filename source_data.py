@@ -1,52 +1,133 @@
+import pandas as pd
+from fredapi import Fred
+
+# Set up FRED API
+FRED_API_KEY = "YOUR_FRED_API_KEY"
+fred = Fred(api_key=FRED_API_KEY)
+
+MISSNG_SERIES = [Underemployment, Initial+Contiuining Jobless Claims, Layoff Announceements, Total Labor Force, Labor Force Partipation Rate, Productivity, Weekly Hours Worked, ADP Jobs, ISM Mfg Employment, ISM Svcs Employment, Challenger Hirings]
+
+# Updated FRED Series Dictionary
+FRED_SERIES_EXTENDED = {
+    # Labor - Employment
+    "Total Employment": "PAYEMS",
+    "Temporary Employment": "TEMPHEL",
+    "Non-Farm Payrolls": "PAYEMS",
+    "Multiple Jobholders": "LNS12026620",
+
+    # Labor - Unemployment
+    "Unemployment Rate": "UNRATE",
+    "Underemployment Rate": "U6RATE", 
+    "Duration of Unemployment": "UEMPMEAN",
+    "Initial Jobless Claims": "ICSA", 
+    "Continuing Jobless Claims": "CCSA", 
+
+    # Labor - Supply
+    "Total Labor Force": "CLF16OV", 
+    "Labor Force Participation Rate": "CIVPART", 
+    "Productivity": "OPHNFB", 
+    "Weekly Hours Worked": "AWHAETP", 
+
+    # Labor - Demand
+    "Total Job Openings": "JTSJOL", 
+    "Quits Rate": "JTSQUR", 
+    "Layoff Rate": "JTSLDL", 
+    "Hires Rate": "JTSHIR", 
+    "NFIB Job Openings": "NFIBJOBS",
+    "Jobs Plentiful - Jobs Hard to Get": "CSCICP03USM665S",
+
+    # Consumer - Spending
+    "PCE": "PCE",
+    "Retail Sales": "RSXFS", 
+    "Durable Goods": "DGORDER",
+    "Non-Durable Goods": "ANDPCE",
+    "Services": "PCES",
+
+    # Consumer - Confidence
+    "UMich Sentiment": "UMCSENT",
+    "Conf Brd Consumer Confidence": "CONCCONF",
+
+    # Consumer - Financial Health
+    "Total Consumer Credit Outstanding": "TOTALSL",
+    "Revolving Credit": "REVOLSL",
+    "Debt Service Ratio": "TDSP",
+    "Credit Card Delinquency Rate": "DRCCLACBS",
+    "Auto Loan Delinquency Rate": "DRALACBS",
+    "Household Net Worth": "TNWBSHNO",
+    
+    # Businesses - Performance
+    "Business Revenue & Sales": "TOTBUSAMT",
+    "Corporate Profits": "CP",
+    "NFIB Small Business Performance": "NFIBOPT",
+    "Industrial Production": "INDPRO",
+    "Capacity Utilization": "TCU",
+
+    # Businesses - Investment
+    "Private Fixed Investment": "FPI",
+    "Business Spending": "PNFI",
+
+    # Businesses - Financing
+    "Corporate Debt Outstanding": "TCMDODNS",
+
+    # Businesses - Confidence
+    
+    # Government
+    "Total Tax Revenue": "FGRECPT",
+    "Federal Budget Deficit": "FYFSD",
+    "Federal Debt % GDP": "GFDEGDQ188S",
+    "Total Federal Govt Debt Outstanding": "GFDEBTN",
+}
+
+# Fetch data from FRED
+def fetch_fred_data(series_dict):
+    data_dict = {}
+    for indicator, series_id in series_dict.items():
+        try:
+            print(f"Fetching {indicator} ({series_id})...")
+            data_dict[indicator] = fred.get_series(series_id)
+        except Exception as e:
+            print(f"Failed to fetch {indicator}: {e}")
+    return data_dict
+
+# Convert fetched data to DataFrame
+def format_data_to_df(data_dict):
+    df = pd.DataFrame(data_dict)
+    df.index = pd.to_datetime(df.index)
+    return df
+
+# Save to Excel
+def save_to_excel(df, filename="economic_data_extended.xlsx"):
+    df.to_excel(filename, engine='openpyxl')
+    print(f"Data saved to {filename}")
+
+# Run the script
+if __name__ == "__main__":
+    data = fetch_fred_data(FRED_SERIES_EXTENDED)
+    df = format_data_to_df(data)
+    save_to_excel(df)
+
+"""
 Economic Activity:
   Real Economic Activity:
-    Labor: 
+    Labor:
       Employment: 
-        - Total Employment
-        - Temporary Employment
-        - Non-Farm Payrolls
-        - Multiple Jobholders
         - ADP Jobs Added
         - ISM Mfg. Employment
         - ISM Svcs. Employment
         - Challenger Hiring Announcements
       Unemployment: 
-        - Unemployment Rate
-        - Underemployment Rate
-        - Duration of Unemployment
-        - Initial Jobless Claims
-        - Continuing Jobless Claims
         - Challenger Layoff Announcements
-      Labor Supply: 
-        - Total Labor Force
-        - Labor Force Participation Rate
-        - Productivity 
-        - Weekly Hours Worked
       Labor Demand: 
-        - Total Job Openings
-        - Vacancy Rate
-        - Quits Rate
-        - Layoff Rate
-        - Hirings Rate
         - NFIB Avg Change in Employment 
         - NFIB Actual Employment Changes
         - NFIB Hirings Plans
+        - NFIB Jobs Openings
         - NFIB % Positions Not Able to Fill
-        - NFIB Job Openings 
-        - Jobs Plentiful - Jobs Hard to Get
         - More Jobs - Fewer Jobs (6 months hence)
         - Probability of Finding Job if Fired
     Consumer: 
-      Spending:
-        - PCE
-        - Retail Sales 
-        - Durable Goods 
-        - Non-Durable Goods
-        - Services 
       Confidence: 
         Current Conditions: 
-          - UMich Sentiment
-          - Conf Brd Consumer Confidence
           - UMich Current Economic Conditions 
         Expected Conditions: 
           - UMich Expectations
@@ -152,4 +233,4 @@ Economic Activity:
         - 10Yr Breakeven
         - 5Yr5Yr Forward Breakeven
 
-
+"""
