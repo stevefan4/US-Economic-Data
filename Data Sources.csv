@@ -1,115 +1,115 @@
-Data Sources,FRED Series ID,Survey Source
-Total Employment,PAYEMS,BLS - Establishment Survey
-Temporary Employment,TEMPHEL,BLS - Establishment Survey
-Non-Farm Payrolls,PAYEMS,BLS - Establishment Survey
-Multiple Jobholders,LNS12026620,BLS - Household Survey
-Unemployment Rate,UNRATE,BLS - Household Survey
-Underemployment Rate,U6RATE,BLS - Household Survey
-Duration of Unemployment,UEMPMEAN,BLS - Household Survey
-Initial Jobless Claims,ICSA,DOL - Unemployment Insurance Weekly Claims
-Continuing Jobless Claims,CCSA,DOL - Unemployment Insurance Weekly Claims
-Total Labor Force,CLF16OV,BLS - Household Survey
-Labor Force Participation Rate,CIVPART,BLS - Household Survey
-Productivity,OPHNFB,BLS - Productivity and Costs
-Weekly Hours Worked,AWHAETP,BLS - Establishment Survey
-Total Job Openings,JTSJOL,BLS - JOLTS
-Quits Rate,JTSQUR,BLS - JOLTS
-Layoff Rate,JTSLDL,BLS - JOLTS
-Hires Rate,JTSHIR,BLS - JOLTS
-NFIB Job Openings,NFIBJOBS,NFIB Small Business Survey
-Jobs Plentiful - Jobs Hard to Get,CSCICP03USM665S,Conference Board Consumer Confidence
-PCE,PCE,BEA - Personal Income and Outlays
-Retail Sales,RSXFS,Census Bureau - Retail Sales
-Durable Goods,DGORDER,"Census Bureau - Manufacturers’ Shipments, Inventories, and Orders"
-Non-Durable Goods,ANDPCE,BEA - Personal Income and Outlays
-Services,PCES,BEA - Personal Income and Outlays
-UMich Sentiment,UMCSENT,University of Michigan Consumer Sentiment Survey
-Conf Brd Consumer Confidence,CONCCONF,Conference Board Consumer Confidence
-Real Personal Income,RPI,BEA - Personal Income and Outlays
-Real Disposable Personal Income,DSPIC96,BEA - Personal Income and Outlays
-Personal Savings Rate,PSAVERT,BEA - Personal Income and Outlays
-Total Consumer Credit Outstanding,TOTALSL,Federal Reserve - Consumer Credit
-Revolving Credit,REVOLSL,Federal Reserve - Consumer Credit
-Debt Service Ratio,TDSP,Federal Reserve - Financial Obligations Ratio
-Household Debt to GDP,HDTGPDUSQ163N,Federal Reserve - Financial Accounts
-Credit Card Delinquency Rate,DRCCLACBS,Federal Reserve - Charge-Off and Delinquency Rates
-Auto Loan Delinquency Rate,DRALACBS,Federal Reserve - Charge-Off and Delinquency Rates
-Mortgage Delinquency Rate,DRSFRMACBS,Federal Reserve - Mortgage Delinquency Rates
-Household Net Worth,TNWBSHNO,Federal Reserve - Financial Accounts
-Household Real Estate Assets,OEHRENWBSHNO,Federal Reserve - Financial Accounts
-Household Retirement Assets,BOGZ1FL153050015Q,Federal Reserve - Financial Accounts
-Business Revenue & Sales,TOTBUSAMT,BEA - GDP & Business Indicators
-Corporate Profits,CP,BEA - GDP & Business Indicators
-NFIB Small Business Performance,NFIBOPT,NFIB Small Business Survey
-Industrial Production,INDPRO,Federal Reserve - Industrial Production
-Capacity Utilization,TCU,Federal Reserve - Industrial Production
-Private Fixed Investment,FPI,BEA - GDP & Business Indicators
-Business Spending,PNFI,BEA - GDP & Business Indicators
-New Orders for Capital Goods,ATCGNO,"Census Bureau - Manufacturers’ Shipments, Inventories, and Orders"
-Non-resedential Construction Spending,TLNRESCONS,Census Bureau - Construction Spending
-Corporate Debt Outstanding,TCMDODNS,Federal Reserve - Financial Accounts
-Corporate Bond Yields & Spreads,BAMLH0A0HYM2,ICE BofA Bond Indices
-Bank Lending to Businesses,BUSLOANS,Federal Reserve - H.8 Report
-Commercial Loan Delinquency Rate,DRBLACBS,Federal Reserve - Charge-Off and Delinquency Rates
-Total Tax Revenue,FGRECPT,Treasury - Monthly Treasury Statement
-Federal Budget Deficit,FYFSD,Treasury - Monthly Treasury Statement
-Federal Debt % GDP,GFDEGDQ188S,Federal Reserve - Financial Accounts
-Total Federal Govt Debt Outstanding,GFDEBTN,Treasury - Monthly Treasury Statement
-ADP Jobs Added,--,ADP National Employment Report
-ISM Mfg. Employment,--,ISM Manufacturing Survey
-ISM Svcs. Employment,--,ISM Services Survey
-Challenger Hiring Announcements,--,"Challenger, Gray & Christmas Report"
-Challenger Layoff Announcements,--,"Challenger, Gray & Christmas Report"
-NFIB Avg Change in Employment,--,NFIB Small Business Survey
-NFIB Actual Employment Changes,--,NFIB Small Business Survey
-NFIB Hirings Plans,--,NFIB Small Business Survey
-NFIB Jobs Openings,--,NFIB Small Business Survey
-NFIB % Positions Not Able to Fill,--,NFIB Small Business Survey
-More Jobs - Fewer Jobs (6 months hence),--,Conference Board Consumer Confidence
-Probability of Finding Job if Fired,--,NY Fed Survey of Consumer Expectations
-UMich Current Economic Conditions,--,University of Michigan Consumer Sentiment Survey
-UMich Expectations,--,University of Michigan Consumer Sentiment Survey
-Conf Brd Expectations,--,Conference Board Consumer Confidence
-NY Fed Consumer Expectations,--,NY Fed Survey of Consumer Expectations
-ISM Manufacturing PMI,--,ISM Manufacturing Survey
-ISM Services PMI,--,ISM Services Survey
-NFIB Small Business Optimism,--,NFIB Small Business Survey
-CEO Confidence,--,Conference Board CEO Confidence Survey
-"Business Conditions Survey (Richmond, Dallas, Philly)",--,Federal Reserve Regional Surveys
-ISM Mfg New Orders,--,ISM Manufacturing Survey
-ISM Svcs New Orders,--,ISM Services Survey
-NFIB Business Outlook,--,NFIB Small Business Survey
-Conf Brd LEI,--,Conference Board Leading Economic Index
-Corporate Tax Receipts,--,Treasury - Monthly Treasury Statement
-Personal Income Tax Receipts,--,Treasury - Monthly Treasury Statement
-Customs Duties & Tariffs Collected,--,Treasury - Monthly Treasury Statement
-State & Local Government Tax Revenue,--,Census Bureau - State & Local Government Finances
-Total Federal Spending,--,Treasury - Monthly Treasury Statement
-Defense Spending,--,Treasury - Monthly Treasury Statement
-Social Security & Medicare Expenditures,--,Treasury - Monthly Treasury Statement
-Infrastructure & Public Works Spending,--,Census Bureau - Construction Spending
-State & Local Government Spending,--,Census Bureau - State & Local Government Finances
-State and Local Govt Debt Outstanding,--,Federal Reserve - Financial Accounts
-Fed Funds Rate,--,Federal Reserve - Interest Rates
-Money Supply,--,Federal Reserve - Money Supply
-Fed Balance Sheet,--,Federal Reserve - H.4.1 Release
-US 10Yr Yld,--,Federal Reserve - Interest Rates
-US 10Yr - 2Yr Spread,--,Federal Reserve - Interest Rates
-Government Investment in Infrastructure,--,Census Bureau - Construction Spending
-Federal R&D Spending,--,NSF - National Science Foundation
-State & Local Capital Investment in Public Services,--,Census Bureau - State & Local Government Finances
-CPI,--,BLS - Consumer Price Index
-Core CPI,--,BLS - Consumer Price Index
-PCE,--,BEA - Personal Income and Outlays
-Core PCE,--,BEA - Personal Income and Outlays
-CPI Housing Component,--,BLS - Consumer Price Index
-PPI,--,BLS - Producer Price Index
-Core PPI,--,BLS - Producer Price Index
-Labor Costs (Wages),--,BLS - Employment Cost Index
-Commodities (BCOM),--,Bloomberg Commodity Index
-UMich 1Yr Inflation Expectations,--,University of Michigan Consumer Sentiment Survey
-UMICH 5Yr Inflation Expectations,--,University of Michigan Consumer Sentiment Survey
-NY Fed Inflation Expectations,--,NY Fed Survey of Consumer Expectations
-5Yr Breakeven,--,Federal Reserve - Interest Rates
-10Yr Breakeven,--,Federal Reserve - Interest Rates
-5Yr5Yr Forward Breakeven,--,Federal Reserve - Interest Rates
+Data Sources,FRED Series ID,Survey Source,Path
+Total Employment,PAYEMS,BLS - Establishment Survey,Economic Activity/Real Economic Activity/Labor/Employment/
+Temporary Employment,TEMPHEL,BLS - Establishment Survey,Economic Activity/Real Economic Activity/Labor/Employment/
+Non-Farm Payrolls,PAYEMS,BLS - Establishment Survey,Economic Activity/Real Economic Activity/Labor/Employment/
+Multiple Jobholders,LNS12026620,BLS - Household Survey,Economic Activity/Real Economic Activity/Labor/Employment/
+Unemployment Rate,UNRATE,BLS - Household Survey,Economic Activity/Real Economic Activity/Labor/Unemployment/
+Underemployment Rate,U6RATE,BLS - Household Survey,Economic Activity/Real Economic Activity/Labor/Unemployment/
+Duration of Unemployment,UEMPMEAN,BLS - Household Survey,Economic Activity/Real Economic Activity/Labor/Unemployment/
+Initial Jobless Claims,ICSA,DOL - Unemployment Insurance Weekly Claims,Economic Activity/Real Economic Activity/Labor/Unemployment/
+Continuing Jobless Claims,CCSA,DOL - Unemployment Insurance Weekly Claims,Economic Activity/Real Economic Activity/Labor/Unemployment/
+Total Labor Force,CLF16OV,BLS - Household Survey,Economic Activity/Real Economic Activity/Labor/Labor Supply/
+Labor Force Participation Rate,CIVPART,BLS - Household Survey,Economic Activity/Real Economic Activity/Labor/Labor Supply/
+Productivity,OPHNFB,BLS - Productivity and Costs,Economic Activity/Real Economic Activity/Labor/Labor Supply/
+Weekly Hours Worked,AWHAETP,BLS - Establishment Survey,Economic Activity/Real Economic Activity/Labor/Labor Supply/
+Total Job Openings,JTSJOL,BLS - JOLTS,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+Quits Rate,JTSQUR,BLS - JOLTS,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+Layoff Rate,JTSLDL,BLS - JOLTS,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+Hires Rate,JTSHIR,BLS - JOLTS,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+NFIB Job Openings,NFIBJOBS,NFIB Small Business Survey,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+Jobs Plentiful - Jobs Hard to Get,CSCICP03USM665S,Conference Board Consumer Confidence,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+PCE,PCE,BEA - Personal Income and Outlays,Economic Activity/Real Economic Activity/Consumer/Consumer Spending/
+Retail Sales,RSXFS,Census Bureau - Retail Sales,Economic Activity/Real Economic Activity/Consumer/Consumer Spending/
+Durable Goods,DGORDER,"Census Bureau - Manufacturers’ Shipments, Inventories, and Orders",Economic Activity/Real Economic Activity/Consumer/Consumer Spending/
+Non-Durable Goods,ANDPCE,BEA - Personal Income and Outlays,Economic Activity/Real Economic Activity/Consumer/Consumer Spending/
+Services,PCES,BEA - Personal Income and Outlays,Economic Activity/Real Economic Activity/Consumer/Consumer Spending/
+UMich Sentiment,UMCSENT,University of Michigan Consumer Sentiment Survey,Economic Activity/Real Economic Activity/Consumer/Consumer Confidence/Current Conditions
+Conf Brd Consumer Confidence,CONCCONF,Conference Board Consumer Confidence,Economic Activity/Real Economic Activity/Consumer/Consumer Confidence/Current Conditions
+Real Personal Income,RPI,BEA - Personal Income and Outlays,Economic Activity/Real Economic Activity/Consumer/Financial Health/Income
+Real Disposable Personal Income,DSPIC96,BEA - Personal Income and Outlays,Economic Activity/Real Economic Activity/Consumer/Financial Health/Income
+Personal Savings Rate,PSAVERT,BEA - Personal Income and Outlays,Economic Activity/Real Economic Activity/Consumer/Financial Health/Savings
+Total Consumer Credit Outstanding,TOTALSL,Federal Reserve - Consumer Credit,Economic Activity/Real Economic Activity/Consumer/Financial Health/Credit Availability and Debt Burden
+Revolving Credit,REVOLSL,Federal Reserve - Consumer Credit,Economic Activity/Real Economic Activity/Consumer/Financial Health/Credit Availability and Debt Burden
+Debt Service Ratio,TDSP,Federal Reserve - Financial Obligations Ratio,Economic Activity/Real Economic Activity/Consumer/Financial Health/Credit Availability and Debt Burden
+Household Debt to GDP,HDTGPDUSQ163N,Federal Reserve - Financial Accounts,Economic Activity/Real Economic Activity/Consumer/Financial Health/Credit Availability and Debt Burden
+Credit Card Delinquency Rate,DRCCLACBS,Federal Reserve - Charge-Off and Delinquency Rates,Economic Activity/Real Economic Activity/Consumer/Financial Health/Delinquency
+Auto Loan Delinquency Rate,DRALACBS,Federal Reserve - Charge-Off and Delinquency Rates,Economic Activity/Real Economic Activity/Consumer/Financial Health/Delinquency
+Mortgage Delinquency Rate,DRSFRMACBS,Federal Reserve - Mortgage Delinquency Rates,Economic Activity/Real Economic Activity/Consumer/Financial Health/Delinquency
+Household Net Worth,TNWBSHNO,Federal Reserve - Financial Accounts,Economic Activity/Real Economic Activity/Consumer/Financial Health/Wealth
+Household Real Estate Assets,OEHRENWBSHNO,Federal Reserve - Financial Accounts,Economic Activity/Real Economic Activity/Consumer/Financial Health/Wealth
+Household Retirement Assets,BOGZ1FL153050015Q,Federal Reserve - Financial Accounts,Economic Activity/Real Economic Activity/Consumer/Financial Health/Wealth
+Business Revenue & Sales,TOTBUSAMT,BEA - GDP & Business Indicators,Economic Activity/Real Economic Activity/Businesses/Performance
+Corporate Profits,CP,BEA - GDP & Business Indicators,Economic Activity/Real Economic Activity/Businesses/Performance
+NFIB Small Business Performance,NFIBOPT,NFIB Small Business Survey,Economic Activity/Real Economic Activity/Businesses/Performance
+Industrial Production,INDPRO,Federal Reserve - Industrial Production,Economic Activity/Real Economic Activity/Businesses/Performance
+Capacity Utilization,TCU,Federal Reserve - Industrial Production,Economic Activity/Real Economic Activity/Businesses/Performance
+Private Fixed Investment,FPI,BEA - GDP & Business Indicators,Economic Activity/Real Economic Activity/Businesses/Investment
+Business Spending,PNFI,BEA - GDP & Business Indicators,Economic Activity/Real Economic Activity/Businesses/Investment
+New Orders for Capital Goods,ATCGNO,"Census Bureau - Manufacturers’ Shipments, Inventories, and Orders",Economic Activity/Real Economic Activity/Businesses/Investment
+Non-resedential Construction Spending,TLNRESCONS,Census Bureau - Construction Spending,Economic Activity/Real Economic Activity/Businesses/Investment
+Corporate Debt Outstanding,TCMDODNS,Federal Reserve - Financial Accounts,Economic Activity/Real Economic Activity/Businesses/Financing
+Corporate Bond Yields & Spreads,BAMLH0A0HYM2,ICE BofA Bond Indices,Economic Activity/Real Economic Activity/Businesses/Financing
+Bank Lending to Businesses,BUSLOANS,Federal Reserve - H.8 Report,Economic Activity/Real Economic Activity/Businesses/Financing
+Commercial Loan Delinquency Rate,DRBLACBS,Federal Reserve - Charge-Off and Delinquency Rates,Economic Activity/Real Economic Activity/Businesses/Financing
+Total Tax Revenue,FGRECPT,Treasury - Monthly Treasury Statement,Economic Activity/Real Economic Activity/Government/Revenue
+Federal Budget Deficit,FYFSD,Treasury - Monthly Treasury Statement,Economic Activity/Real Economic Activity/Government/Deficit
+Federal Debt % GDP,GFDEGDQ188S,Federal Reserve - Financial Accounts,Economic Activity/Real Economic Activity/Government/Deficit
+Total Federal Govt Debt Outstanding,GFDEBTN,Treasury - Monthly Treasury Statement,Economic Activity/Real Economic Activity/Government/Deficit
+ADP Jobs Added,--,ADP National Employment Report,Economic Activity/Real Economic Activity/Labor/Employment/
+ISM Mfg. Employment,--,ISM Manufacturing Survey,Economic Activity/Real Economic Activity/Labor/Employment/
+ISM Svcs. Employment,--,ISM Services Survey,Economic Activity/Real Economic Activity/Labor/Employment/
+Challenger Hiring Announcements,--,"Challenger, Gray & Christmas Report",Economic Activity/Real Economic Activity/Labor/Employment/
+Challenger Layoff Announcements,--,"Challenger, Gray & Christmas Report",Economic Activity/Real Economic Activity/Labor/Unemployment/
+NFIB Avg Change in Employment,--,NFIB Small Business Survey,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+NFIB Actual Employment Changes,--,NFIB Small Business Survey,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+NFIB Hirings Plans,--,NFIB Small Business Survey,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+NFIB Jobs Openings,--,NFIB Small Business Survey,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+NFIB % Positions Not Able to Fill,--,NFIB Small Business Survey,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+More Jobs - Fewer Jobs (6 months hence),--,Conference Board Consumer Confidence,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+Probability of Finding Job if Fired,--,NY Fed Survey of Consumer Expectations,Economic Activity/Real Economic Activity/Labor/Labor Demand/
+UMich Current Economic Conditions,--,University of Michigan Consumer Sentiment Survey,Economic Activity/Real Economic Activity/Consumer/Consumer Confidence/Current Conditions
+UMich Expectations,--,University of Michigan Consumer Sentiment Survey,Economic Activity/Real Economic Activity/Consumer/Consumer Confidence/Expectations
+Conf Brd Expectations,--,Conference Board Consumer Confidence,Economic Activity/Real Economic Activity/Consumer/Consumer Confidence/Expectations
+NY Fed Consumer Expectations,--,NY Fed Survey of Consumer Expectations,Economic Activity/Real Economic Activity/Consumer/Consumer Confidence/Expectations
+ISM Manufacturing PMI,--,ISM Manufacturing Survey,Economic Activity/Real Economic Activity/Businesses/Confidence/Current Conditions
+ISM Services PMI,--,ISM Services Survey,Economic Activity/Real Economic Activity/Businesses/Confidence/Current Conditions
+NFIB Small Business Optimism,--,NFIB Small Business Survey,Economic Activity/Real Economic Activity/Businesses/Confidence/Current Conditions
+CEO Confidence,--,Conference Board CEO Confidence Survey,Economic Activity/Real Economic Activity/Businesses/Confidence/Current Conditions
+"Business Conditions Survey (Richmond, Dallas, Philly)",--,Federal Reserve Regional Surveys,Economic Activity/Real Economic Activity/Businesses/Confidence/Current Conditions
+ISM Mfg New Orders,--,ISM Manufacturing Survey,Economic Activity/Real Economic Activity/Businesses/Confidence/Expectations
+ISM Svcs New Orders,--,ISM Services Survey,Economic Activity/Real Economic Activity/Businesses/Confidence/Expectations
+NFIB Business Outlook,--,NFIB Small Business Survey,Economic Activity/Real Economic Activity/Businesses/Confidence/Expectations
+Conf Brd LEI,--,Conference Board Leading Economic Index,Economic Activity/Real Economic Activity/Businesses/Confidence/Expectations
+Corporate Tax Receipts,--,Treasury - Monthly Treasury Statement,Economic Activity/Real Economic Activity/Government/Revenue
+Personal Income Tax Receipts,--,Treasury - Monthly Treasury Statement,Economic Activity/Real Economic Activity/Government/Revenue
+Customs Duties & Tariffs Collected,--,Treasury - Monthly Treasury Statement,Economic Activity/Real Economic Activity/Government/Revenue
+State & Local Government Tax Revenue,--,Census Bureau - State & Local Government Finances,Economic Activity/Real Economic Activity/Government/Revenue
+Total Federal Spending,--,Treasury - Monthly Treasury Statement,Economic Activity/Real Economic Activity/Government/Spending
+Defense Spending,--,Treasury - Monthly Treasury Statement,Economic Activity/Real Economic Activity/Government/Spending
+Social Security & Medicare Expenditures,--,Treasury - Monthly Treasury Statement,Economic Activity/Real Economic Activity/Government/Spending
+Infrastructure & Public Works Spending,--,Census Bureau - Construction Spending,Economic Activity/Real Economic Activity/Government/Spending
+State & Local Government Spending,--,Census Bureau - State & Local Government Finances,Economic Activity/Real Economic Activity/Government/Spending
+State and Local Govt Debt Outstanding,--,Federal Reserve - Financial Accounts,Economic Activity/Real Economic Activity/Government/Deficit
+Fed Funds Rate,--,Federal Reserve - Interest Rates,Economic Activity/Real Economic Activity/Government/Monetary & Fiscal Policy
+Money Supply,--,Federal Reserve - Money Supply,Economic Activity/Real Economic Activity/Government/Monetary & Fiscal Policy
+Fed Balance Sheet,--,Federal Reserve - H.4.1 Release,Economic Activity/Real Economic Activity/Government/Monetary & Fiscal Policy
+US 10Yr Yld,--,Federal Reserve - Interest Rates,Economic Activity/Real Economic Activity/Government/Monetary & Fiscal Policy
+US 10Yr - 2Yr Spread,--,Federal Reserve - Interest Rates,Economic Activity/Real Economic Activity/Government/Monetary & Fiscal Policy
+Government Investment in Infrastructure,--,Census Bureau - Construction Spending,Economic Activity/Real Economic Activity/Government/Investment
+Federal R&D Spending,--,NSF - National Science Foundation,Economic Activity/Real Economic Activity/Government/Investment
+State & Local Capital Investment in Public Services,--,Census Bureau - State & Local Government Finances,Economic Activity/Real Economic Activity/Government/Investment
+CPI,--,BLS - Consumer Price Index,Prices/Realized Prices/Consumers/
+Core CPI,--,BLS - Consumer Price Index,Prices/Realized Prices/Consumers/
+PCE,--,BEA - Personal Income and Outlays,Prices/Realized Prices/Consumers/
+Core PCE,--,BEA - Personal Income and Outlays,Prices/Realized Prices/Consumers/
+CPI Housing Component,--,BLS - Consumer Price Index,Prices/Realized Prices/Consumers/
+PPI,--,BLS - Producer Price Index,Prices/Realized Prices/Businesses/
+Core PPI,--,BLS - Producer Price Index,Prices/Realized Prices/Businesses/
+Labor Costs (Wages),--,BLS - Employment Cost Index,Prices/Realized Prices/Businesses/
+Commodities (BCOM),--,Bloomberg Commodity Index,Prices/Realized Prices/Businesses/
+UMich 1Yr Inflation Expectations,--,University of Michigan Consumer Sentiment Survey,Prices/Price Expectations/Survey-Based/
+UMICH 5Yr Inflation Expectations,--,University of Michigan Consumer Sentiment Survey,Prices/Price Expectations/Survey-Based/
+NY Fed Inflation Expectations,--,NY Fed Survey of Consumer Expectations,Prices/Price Expectations/Survey-Based/
+5Yr Breakeven,--,Federal Reserve - Interest Rates,Prices/Price Expectations/Market-Based/
+10Yr Breakeven,--,Federal Reserve - Interest Rates,Prices/Price Expectations/Market-Based/
+5Yr5Yr Forward Breakeven,--,Federal Reserve - Interest Rates,Prices/Price Expectations/Market-Based/
