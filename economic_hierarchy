@@ -1,224 +1,308 @@
 digraph {
-	nodesep=0.5 rankdir=TB ranksep=0.75
-	"84737a" [label="Economic Activity"]
-	"0860a8" [label="Real Economic Activity"]
-	"84737a" -> "0860a8"
-	"87c018" [label=Labor]
+	nodesep=0.3 rankdir=LR ranksep=1.2 splines=ortho
+	"742a1e" [label="Economic Activity" fillcolor=lightblue shape=doubleoctagon style=filled]
+	"0860a8" [label="Real Economic Activity" shape=box]
+	"742a1e" -> "0860a8"
+	"87c018" [label=Labor shape=box]
 	"0860a8" -> "87c018"
-	f5df24 [label=Employment]
+	f5df24 [label=Employment shape=box]
 	"87c018" -> f5df24
-	"907a30" [label="Total Employment"]
+	"907a30" [label="Total Employment" shape=ellipse]
 	f5df24 -> "907a30"
-	"56a09a" [label="Temporary Employment"]
+	"56a09a" [label="Temporary Employment" shape=ellipse]
 	f5df24 -> "56a09a"
-	b341b2 [label="Non-Farm Payrolls"]
+	b341b2 [label="Non-Farm Payrolls" shape=ellipse]
 	f5df24 -> b341b2
-	be11dc [label="Multiple Jobholders"]
+	be11dc [label="Multiple Jobholders" shape=ellipse]
 	f5df24 -> be11dc
-	b06456 [label="ADP Jobs Added"]
+	b06456 [label="ADP Jobs Added" shape=ellipse]
 	f5df24 -> b06456
-	"83ac8f" [label="ISM Mfg. Employment"]
+	"83ac8f" [label="ISM Mfg. Employment" shape=ellipse]
 	f5df24 -> "83ac8f"
-	e3fb03 [label="ISM Svcs. Employment"]
+	e3fb03 [label="ISM Svcs. Employment" shape=ellipse]
 	f5df24 -> e3fb03
-	f2f6f1 [label="Challenger Hiring Announcements"]
+	f2f6f1 [label="Challenger Hiring Announcements" shape=ellipse]
 	f5df24 -> f2f6f1
-	"1ebedc" [label=Unemployment]
+	"1ebedc" [label=Unemployment shape=box]
 	"87c018" -> "1ebedc"
-	"54c004" [label="Unemployment Rate"]
+	"54c004" [label="Unemployment Rate" shape=ellipse]
 	"1ebedc" -> "54c004"
-	"6932f3" [label="Underemployment Rate"]
+	"6932f3" [label="Underemployment Rate" shape=ellipse]
 	"1ebedc" -> "6932f3"
-	a7d860 [label="Duration of Unemployment"]
+	a7d860 [label="Duration of Unemployment" shape=ellipse]
 	"1ebedc" -> a7d860
-	e5a9bb [label="Initial Jobless Claims"]
+	e5a9bb [label="Initial Jobless Claims" shape=ellipse]
 	"1ebedc" -> e5a9bb
-	fdddfa [label="Continuing Jobless Claims"]
+	fdddfa [label="Continuing Jobless Claims" shape=ellipse]
 	"1ebedc" -> fdddfa
-	"231f3e" [label="Challenger Layoff Announcements"]
+	"231f3e" [label="Challenger Layoff Announcements" shape=ellipse]
 	"1ebedc" -> "231f3e"
-	"006c7a" [label="Labor Supply"]
+	"006c7a" [label="Labor Supply" shape=box]
 	"87c018" -> "006c7a"
-	"72d573" [label="Total Labor Force"]
+	"72d573" [label="Total Labor Force" shape=ellipse]
 	"006c7a" -> "72d573"
-	"77beed" [label="Labor Force Participation Rates"]
+	"77beed" [label="Labor Force Participation Rates" shape=ellipse]
 	"006c7a" -> "77beed"
-	"4f5862" [label=Productivity]
+	"4f5862" [label=Productivity shape=ellipse]
 	"006c7a" -> "4f5862"
-	"8762fd" [label="Weekly Hours Worked"]
+	"8762fd" [label="Weekly Hours Worked" shape=ellipse]
 	"006c7a" -> "8762fd"
-	"68abf5" [label="Labor Demand"]
+	"68abf5" [label="Labor Demand" shape=box]
 	"87c018" -> "68abf5"
-	a1a848 [label="Job Openings"]
+	a1a848 [label="Job Openings" shape=ellipse]
 	"68abf5" -> a1a848
-	f8dea5 [label="Vacancy Rate"]
+	f8dea5 [label="Vacancy Rate" shape=ellipse]
 	"68abf5" -> f8dea5
-	"535f11" [label="Quits Rate"]
+	"535f11" [label="Quits Rate" shape=ellipse]
 	"68abf5" -> "535f11"
-	c0de62 [label="Layoff Rate"]
+	c0de62 [label="Layoff Rate" shape=ellipse]
 	"68abf5" -> c0de62
-	f1c17f [label="Hirings Rate"]
+	f1c17f [label="Hirings Rate" shape=ellipse]
 	"68abf5" -> f1c17f
-	a41c7a [label="NFIB Avg Change in Employment"]
+	a41c7a [label="NFIB Avg Change in Employment" shape=ellipse]
 	"68abf5" -> a41c7a
-	e00b13 [label="NFIB Actual Employment Changes"]
+	e00b13 [label="NFIB Actual Employment Changes" shape=ellipse]
 	"68abf5" -> e00b13
-	379574 [label="NFIB Hirings Plans"]
+	379574 [label="NFIB Hirings Plans" shape=ellipse]
 	"68abf5" -> 379574
-	bda397 [label="NFIB % Positions Not Able to Fill"]
+	bda397 [label="NFIB % Positions Not Able to Fill" shape=ellipse]
 	"68abf5" -> bda397
-	"1a51ce" [label="NFIB Job Openings"]
+	"1a51ce" [label="NFIB Job Openings" shape=ellipse]
 	"68abf5" -> "1a51ce"
-	a557cf [label="Jobs Plentiful - Jobs Hard to Get"]
+	a557cf [label="Jobs Plentiful - Jobs Hard to Get" shape=ellipse]
 	"68abf5" -> a557cf
-	"2177ae" [label="More Jobs - Fewer Jobs (6 months hence)"]
+	"2177ae" [label="More Jobs - Fewer Jobs (6 months hence)" shape=ellipse]
 	"68abf5" -> "2177ae"
-	"7aac82" [label="Probability of Finding Job if Fired"]
+	"7aac82" [label="Probability of Finding Job if Fired" shape=ellipse]
 	"68abf5" -> "7aac82"
-	"86674c" [label=Consumer]
+	"86674c" [label=Consumer shape=box]
 	"0860a8" -> "86674c"
-	be39e5 [label=Spending]
+	be39e5 [label=Spending shape=box]
 	"86674c" -> be39e5
-	865929 [label=PCE]
+	865929 [label=PCE shape=ellipse]
 	be39e5 -> 865929
-	"6ec8cd" [label="Retail Sales"]
+	"6ec8cd" [label="Retail Sales" shape=ellipse]
 	be39e5 -> "6ec8cd"
-	"6d7ae9" [label="Durable Goods"]
+	"6d7ae9" [label="Durable Goods" shape=ellipse]
 	be39e5 -> "6d7ae9"
-	"7d00c8" [label="Non-Durable Goods"]
+	"7d00c8" [label="Non-Durable Goods" shape=ellipse]
 	be39e5 -> "7d00c8"
-	b2020e [label=Services]
+	b2020e [label=Services shape=ellipse]
 	be39e5 -> b2020e
-	"732ee8" [label=Confidence]
+	"732ee8" [label=Confidence shape=box]
 	"86674c" -> "732ee8"
-	d81543 [label="Current Conditions"]
+	d81543 [label="Current Conditions" shape=box]
 	"732ee8" -> d81543
-	"978ca9" [label="UMich Sentiment"]
+	"978ca9" [label="UMich Sentiment" shape=ellipse]
 	d81543 -> "978ca9"
-	"72c130" [label="Conf Brd Consumer Confidence"]
+	"72c130" [label="Conf Brd Consumer Confidence" shape=ellipse]
 	d81543 -> "72c130"
-	"0c7fb6" [label="UMich Current Economic Conditions"]
+	"0c7fb6" [label="UMich Current Economic Conditions" shape=ellipse]
 	d81543 -> "0c7fb6"
-	a77a71 [label="Expected Conditions"]
+	a77a71 [label="Expected Conditions" shape=box]
 	"732ee8" -> a77a71
-	"63d5ca" [label="UMich Expectations"]
+	"63d5ca" [label="UMich Expectations" shape=ellipse]
 	a77a71 -> "63d5ca"
-	"66b1c8" [label="Conf Brd Expectations"]
+	"66b1c8" [label="Conf Brd Expectations" shape=ellipse]
 	a77a71 -> "66b1c8"
-	"1eb1f9" [label="NY Fed Consumer Expectations"]
+	"1eb1f9" [label="NY Fed Consumer Expectations" shape=ellipse]
 	a77a71 -> "1eb1f9"
-	aac994 [label="Financial Health"]
+	aac994 [label="Financial Health" shape=box]
 	"86674c" -> aac994
-	edfc4b [label=Income]
+	edfc4b [label=Income shape=box]
 	aac994 -> edfc4b
-	"2361b4" [label="Real Personal Income"]
+	"2361b4" [label="Real Personal Income" shape=ellipse]
 	edfc4b -> "2361b4"
-	"3d9e37" [label="Real Disposable Personal Income"]
+	"3d9e37" [label="Real Disposable Personal Income" shape=ellipse]
 	edfc4b -> "3d9e37"
-	"69436d" [label=Savings]
+	"69436d" [label=Savings shape=box]
 	aac994 -> "69436d"
-	"8158e8" [label="Personal Savings Rate"]
+	"8158e8" [label="Personal Savings Rate" shape=ellipse]
 	"69436d" -> "8158e8"
-	"883b56" [label="Credit Availability and Debt Burden"]
+	"883b56" [label="Credit Availability and Debt Burden" shape=box]
 	aac994 -> "883b56"
-	e9b41b [label="Total Consumer Credit Outstanding"]
+	e9b41b [label="Total Consumer Credit Outstanding" shape=ellipse]
 	"883b56" -> e9b41b
-	be2384 [label="Revolving Credit"]
+	be2384 [label="Revolving Credit" shape=ellipse]
 	"883b56" -> be2384
-	ed6ce9 [label="Non-Revolving Credit"]
+	ed6ce9 [label="Non-Revolving Credit" shape=ellipse]
 	"883b56" -> ed6ce9
-	"6a6467" [label="Debt Service Ratio"]
+	"6a6467" [label="Debt Service Ratio" shape=ellipse]
 	"883b56" -> "6a6467"
-	"505cb0" [label="Household Debt to GDP"]
+	"505cb0" [label="Household Debt to GDP" shape=ellipse]
 	"883b56" -> "505cb0"
-	"8253c7" [label=Delinquencies]
+	"8253c7" [label=Delinquencies shape=box]
 	aac994 -> "8253c7"
-	"5afe6d" [label="Credit Cards Delinquency Rate"]
+	"5afe6d" [label="Credit Cards Delinquency Rate" shape=ellipse]
 	"8253c7" -> "5afe6d"
-	e36a1e [label="Auto Loan Delinquency Rate"]
+	e36a1e [label="Auto Loan Delinquency Rate" shape=ellipse]
 	"8253c7" -> e36a1e
-	"4806c5" [label="Mortgage Delinquency Rate"]
+	"4806c5" [label="Mortgage Delinquency Rate" shape=ellipse]
 	"8253c7" -> "4806c5"
-	173449 [label=Wealth]
+	173449 [label=Wealth shape=box]
 	aac994 -> 173449
-	"9b9766" [label="Household Net Worth"]
+	"9b9766" [label="Household Net Worth" shape=ellipse]
 	173449 -> "9b9766"
-	"5884bc" [label="Household Real Estate Assets"]
+	"5884bc" [label="Household Real Estate Assets" shape=ellipse]
 	173449 -> "5884bc"
-	"4e76fb" [label="Retirement Assets"]
+	"4e76fb" [label="Retirement Assets" shape=ellipse]
 	173449 -> "4e76fb"
-	deadb9 [label=Businesses]
+	deadb9 [label=Businesses shape=box]
 	"0860a8" -> deadb9
-	"9cd9d8" [label=Performance]
+	"9cd9d8" [label=Performance shape=box]
 	deadb9 -> "9cd9d8"
-	"10d7ec" [label="Business Revenue & Sales"]
+	"10d7ec" [label="Business Revenue & Sales" shape=ellipse]
 	"9cd9d8" -> "10d7ec"
-	"00b206" [label="Corporate Profits"]
+	"00b206" [label="Corporate Profits" shape=ellipse]
 	"9cd9d8" -> "00b206"
-	a09b12 [label="NFIB Small Business Performance"]
+	a09b12 [label="NFIB Small Business Performance" shape=ellipse]
 	"9cd9d8" -> a09b12
-	"15754d" [label="Industrial Production"]
+	"15754d" [label="Industrial Production" shape=ellipse]
 	"9cd9d8" -> "15754d"
-	e07546 [label="Capacity Utilization"]
+	e07546 [label="Capacity Utilization" shape=ellipse]
 	"9cd9d8" -> e07546
-	d72e79 [label=Investment]
+	d72e79 [label=Investment shape=box]
 	deadb9 -> d72e79
-	592843 [label="Private Fixed Investment"]
+	592843 [label="Private Fixed Investment" shape=ellipse]
 	d72e79 -> 592843
-	a0bc30 [label="Business Spending"]
+	a0bc30 [label="Business Spending" shape=ellipse]
 	d72e79 -> a0bc30
-	ef2424 [label="New Orders for Capital Goods"]
+	ef2424 [label="New Orders for Capital Goods" shape=ellipse]
 	d72e79 -> ef2424
-	"682d03" [label="Non-resedential Construction Spending"]
+	"682d03" [label="Non-resedential Construction Spending" shape=ellipse]
 	d72e79 -> "682d03"
-	"8c4701" [label=Financing]
+	"8c4701" [label=Financing shape=box]
 	deadb9 -> "8c4701"
-	c7771c [label="Corporate Debt Outstanding"]
+	c7771c [label="Corporate Debt Outstanding" shape=ellipse]
 	"8c4701" -> c7771c
-	"271ef8" [label="Corporate Bond Yields & Spreads"]
+	"271ef8" [label="Corporate Bond Yields & Spreads" shape=ellipse]
 	"8c4701" -> "271ef8"
-	"7fb8c0" [label="Bank Lending to Businesses"]
+	"7fb8c0" [label="Bank Lending to Businesses" shape=ellipse]
 	"8c4701" -> "7fb8c0"
-	411977 [label="Commerical Loan Delinquency Rate"]
+	411977 [label="Commerical Loan Delinquency Rate" shape=ellipse]
 	"8c4701" -> 411977
-	"15444b" [label=Confidence]
+	"15444b" [label=Confidence shape=box]
 	deadb9 -> "15444b"
-	d81543 [label="Current Conditions"]
+	d81543 [label="Current Conditions" shape=box]
 	"15444b" -> d81543
-	a77a71 [label="Expected Conditions"]
+	f641ad [label="ISM Manufacturing PMI" shape=ellipse]
+	d81543 -> f641ad
+	"4a9a07" [label="ISM Services PMI" shape=ellipse]
+	d81543 -> "4a9a07"
+	"221df6" [label="NFIB Small Business Optimism" shape=ellipse]
+	d81543 -> "221df6"
+	"7b1307" [label="CEO Confidence" shape=ellipse]
+	d81543 -> "7b1307"
+	"5b50f5" [label="Business Conditions Survey (Richmond, Dallas, Philly)" shape=ellipse]
+	d81543 -> "5b50f5"
+	a77a71 [label="Expected Conditions" shape=box]
 	"15444b" -> a77a71
-	b421fc [label=Government]
+	eb293b [label="ISM Mfg New Orders" shape=ellipse]
+	a77a71 -> eb293b
+	dcf6e0 [label="ISM Svcs New Orders" shape=ellipse]
+	a77a71 -> dcf6e0
+	f24a08 [label="NFIB Business Outlook" shape=ellipse]
+	a77a71 -> f24a08
+	"4956c7" [label="Conf Brd LEI" shape=ellipse]
+	a77a71 -> "4956c7"
+	b421fc [label=Government shape=box]
 	"0860a8" -> b421fc
-	fa8cd4 [label=Revenue]
+	fa8cd4 [label=Revenue shape=box]
 	b421fc -> fa8cd4
-	f87c12 [label=Spending]
+	be7634 [label="Total Tax Revenue" shape=ellipse]
+	fa8cd4 -> be7634
+	"333bc5" [label="Corporate Tax Receipts" shape=ellipse]
+	fa8cd4 -> "333bc5"
+	"07dc44" [label="Personal Income Tax Receipts" shape=ellipse]
+	fa8cd4 -> "07dc44"
+	"7469cf" [label="Customs Duties & Tariffs Collected" shape=ellipse]
+	fa8cd4 -> "7469cf"
+	277076 [label="State & Local Government Tax Revenue" shape=ellipse]
+	fa8cd4 -> 277076
+	f87c12 [label=Spending shape=box]
 	b421fc -> f87c12
-	"16547a" [label=Deficit]
+	"601a3e" [label="Total Federal Spending" shape=ellipse]
+	f87c12 -> "601a3e"
+	a58afd [label="Defense Spending" shape=ellipse]
+	f87c12 -> a58afd
+	b8d114 [label="Social Security & Medicare Expenditures" shape=ellipse]
+	f87c12 -> b8d114
+	cebe3b [label="Infrastructure & Public Works Spending" shape=ellipse]
+	f87c12 -> cebe3b
+	eb8181 [label="State & Local Government Spending" shape=ellipse]
+	f87c12 -> eb8181
+	"16547a" [label=Deficit shape=box]
 	b421fc -> "16547a"
-	"3f8981" [label="Monetary & Fiscal Policy"]
+	"4644d9" [label="Federal Budget Deficit" shape=ellipse]
+	"16547a" -> "4644d9"
+	f6e6b6 [label="Federal Debt % GDP" shape=ellipse]
+	"16547a" -> f6e6b6
+	"2802de" [label="Total Federal Govt Debt Outstanding" shape=ellipse]
+	"16547a" -> "2802de"
+	ddfdc1 [label="State and Local Govt Debt Outstanding" shape=ellipse]
+	"16547a" -> ddfdc1
+	"3f8981" [label="Monetary & Fiscal Policy" shape=box]
 	b421fc -> "3f8981"
-	d431bd [label=Investment]
+	"7f35cd" [label="Fed Funds Rate" shape=ellipse]
+	"3f8981" -> "7f35cd"
+	"52557e" [label="Money Supply" shape=ellipse]
+	"3f8981" -> "52557e"
+	"9aee8e" [label="Fed Balance Sheet" shape=ellipse]
+	"3f8981" -> "9aee8e"
+	ca98e5 [label="US 10Yr Yld" shape=ellipse]
+	"3f8981" -> ca98e5
+	"0734fd" [label="US 10Yr - 2Yr Spread" shape=ellipse]
+	"3f8981" -> "0734fd"
+	d431bd [label=Investment shape=box]
 	b421fc -> d431bd
-	"1509ec" [label=Prices]
-	"84737a" -> "1509ec"
-	"15809c" [label="Realized Prices"]
+	c12ab9 [label="Government Investment in Infrastructure" shape=ellipse]
+	d431bd -> c12ab9
+	"4b82b4" [label="Federal R&D Spending" shape=ellipse]
+	d431bd -> "4b82b4"
+	c1b783 [label="State & Local Capital Investment in Public Services" shape=ellipse]
+	d431bd -> c1b783
+	"1509ec" [label=Prices shape=box]
+	"742a1e" -> "1509ec"
+	"15809c" [label="Realized Prices" shape=box]
 	"1509ec" -> "15809c"
-	"53d79f" [label=Consumers]
+	"53d79f" [label=Consumers shape=box]
 	"15809c" -> "53d79f"
-	e104c3 [label=Businessses]
+	"9cb644" [label=CPI shape=ellipse]
+	"53d79f" -> "9cb644"
+	"24c5d1" [label="Core CPI" shape=ellipse]
+	"53d79f" -> "24c5d1"
+	"8e2731" [label=PCE shape=ellipse]
+	"53d79f" -> "8e2731"
+	"8396d8" [label="Core PCE" shape=ellipse]
+	"53d79f" -> "8396d8"
+	"93a8cd" [label="CPI Housing Component" shape=ellipse]
+	"53d79f" -> "93a8cd"
+	e104c3 [label=Businessses shape=box]
 	"15809c" -> e104c3
-	"367aa3" [label="Price Expectations"]
+	"1193da" [label=PPI shape=ellipse]
+	e104c3 -> "1193da"
+	"01adab" [label="Core PPI" shape=ellipse]
+	e104c3 -> "01adab"
+	ab1699 [label="Labor Costs (Wages)" shape=ellipse]
+	e104c3 -> ab1699
+	e1cdf0 [label="Commodoties (BCOM)" shape=ellipse]
+	e104c3 -> e1cdf0
+	"367aa3" [label="Price Expectations" shape=box]
 	"1509ec" -> "367aa3"
-	f56470 [label="Survey-Based"]
+	f56470 [label="Survey-Based" shape=box]
 	"367aa3" -> f56470
-	"1aac4b" [label="UMich Inflation Expectations"]
-	f56470 -> "1aac4b"
-	f6882d [label="NY Fed Survey"]
-	f56470 -> f6882d
-	"485caf" [label="Market-Based"]
+	"6f4596" [label="UMich 1Yr Inflation Expectations" shape=ellipse]
+	f56470 -> "6f4596"
+	545987 [label="UMICH 5Yr Inflation Expectations" shape=ellipse]
+	f56470 -> 545987
+	"35f4b1" [label="NY Fed Inflation Expectations" shape=ellipse]
+	f56470 -> "35f4b1"
+	"485caf" [label="Market-Based" shape=box]
 	"367aa3" -> "485caf"
-	"8951b1" [label="TIPS Breakevens"]
-	"485caf" -> "8951b1"
-	"07e43d" [label="Inflation Swaps"]
-	"485caf" -> "07e43d"
+	bed147 [label="5Yr Breakeven" shape=ellipse]
+	"485caf" -> bed147
+	"6d9c96" [label="10Yr Breakeven" shape=ellipse]
+	"485caf" -> "6d9c96"
+	"3192b8" [label="5Yr5Yr Forward Breakeven" shape=ellipse]
+	"485caf" -> "3192b8"
 }
