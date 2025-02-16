@@ -1,0 +1,20 @@
+Economic Activity:
+  Real Economic Production:
+    Components:
+      - Business Output
+      - Industrial Production
+      - Consumer and Business Activity
+      - Supply Chain Dynamics
+  Prices:
+    Price Expectations:
+      Survey-Based:
+        - UMich Inflation Expectations
+        - NY Fed Survey
+      Market-Based:
+        - TIPS Breakevens
+        - Inflation Swaps
+    Realized Prices:
+      - Consumer Price Index (CPI)
+      - Producer Price Index (PPI)
+      - Personal Consumption Expenditures (PCE)
+
