@@ -40,16 +40,38 @@ Economic Activity:
       Spending:
         - PCE
         - Retail Sales 
+        - Durable Goods 
+        - Non-Durable Goods
+        - Services 
       Confidence: 
-        - UMich
-        - Conference Board
+        Current Conditions: 
+          - UMich Sentiment
+          - Conf Brd Consumer Confidence
+          - UMich Current Economic Conditions 
+        Expected Conditions: 
+          - UMich Expectations
+          - Conf Brd Expectations
+          - NY Fed Consumer Expectations
       Financial Health: 
-        - Personal Income and Wages
-        - Savings Rate
-        - Consumer Credit 
-        - Delinquincies 
-        - Wealth and Net Worth
-        - Debt / Assets
+        Income: 
+          - Real Personal Income
+          - Real Disposable Personal Income
+        Savings:
+          - Personal Savings Rate 
+        Credit Availability and Debt Burden: 
+          - Total Consumer Credit Outstanding
+          - Revolving Credit
+          - Non-Revolving Credit
+          - Debt Service Ratio
+          - Household Debt to GDP
+        Delinquencies: 
+          - Credit Cards Delinquency Rate
+          - Auto Loan Delinquency Rate
+          - Mortgage Delinquency Rate
+        Wealth: 
+          - Household Net Worth
+          - Household Real Estate Assets 
+          - Retirement Assets
     Businesses: 
     Government: 
     Credit: 
