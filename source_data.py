@@ -321,3 +321,192 @@ if __name__ == "__main__":
         save_hiring_to_excel(hiring_announcements)
 
 '''
+#%% Challenger Layoff Announcements Data Pull
+'''
+import requests  # For making HTTP requests
+from bs4 import BeautifulSoup  # For parsing HTML content
+import pandas as pd  # For structuring and saving data
+
+# Define the URL for Challenger Reports
+CHALLENGER_URL = "https://www.challengergray.com/reports/"
+
+# Function to scrape Challenger Layoff Announcements
+def scrape_challenger_layoffs():
+    """
+    Scrapes Challenger Layoff Announcements from the latest report page.
+    
+    :return: A list of dictionaries containing layoff announcement data.
+    """
+    try:
+        # Send a GET request to the Challenger Reports page
+        response = requests.get(CHALLENGER_URL)
+        response.raise_for_status()  # Raise an error for failed requests
+        
+        # Parse the HTML using BeautifulSoup
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        # Locate the latest layoff announcement section (Update selector if needed)
+        layoff_section = soup.find("section", class_="reports-list")  # Example selector
+
+        # List to store extracted layoff announcements
+        layoff_data = []
+
+        if layoff_section:
+            # Find all report items within the section
+            reports = layoff_section.find_all("article")
+
+            # Loop through reports and extract layoff data
+            for report in reports:
+                title = report.find("h2").text.strip() if report.find("h2") else "N/A"  # Report title
+                date = report.find("time").text.strip() if report.find("time") else "N/A"  # Report date
+                link = report.find("a")["href"] if report.find("a") else "N/A"  # Report link
+
+                # Store extracted data
+                if "layoff" in title.lower() or "job cuts" in title.lower():  # Filter layoff-related reports
+                    layoff_data.append({"Date": date, "Title": title, "Report Link": link})
+
+        return layoff_data  # Return extracted layoff announcements
+
+    except requests.RequestException as e:
+        print(f"Error fetching Challenger Layoff Announcements: {e}")
+        return None
+
+# Function to save layoff data to an Excel file
+def save_layoffs_to_excel(layoff_data, filename="challenger_layoff_announcements.xlsx"):
+    """
+    Saves Challenger Layoff Announcements data to an Excel file.
+
+    :param layoff_data: List of dictionaries containing layoff data.
+    :param filename: Name of the output Excel file.
+    """
+    if layoff_data:
+        df = pd.DataFrame(layoff_data)  # Convert list of dicts to DataFrame
+        df.to_excel(filename, index=False, engine='openpyxl')  # Save to Excel
+        print(f"Challenger Layoff Announcements saved to {filename}")
+    else:
+        print("No data to save.")
+
+# Main execution block
+if __name__ == "__main__":
+    """
+    - Scrapes the latest Challenger Layoff Announcements.
+    - Saves the extracted data into an Excel file.
+    """
+    layoff_announcements = scrape_challenger_layoffs()
+
+    if layoff_announcements:  # If data is successfully fetched
+        save_layoffs_to_excel(layoff_announcements)
+'''
+
+#%% NFIB Data Pull
+'''
+import requests  # For making HTTP requests
+from bs4 import BeautifulSoup  # For parsing HTML content
+import pandas as pd  # For structuring and saving data
+
+# Define the NFIB survey URL
+NFIB_URL = "https://www.nfib.com/surveys/small-business-economic-trends/"
+
+# Function to scrape NFIB employment and business sentiment data
+def scrape_nfib_data():
+    """
+    Scrapes NFIB employment and business sentiment indicators from the latest report.
+
+    :return: A dictionary containing NFIB key indicators.
+    """
+    try:
+        # Send a GET request to the NFIB page
+        response = requests.get(NFIB_URL)
+        response.raise_for_status()  # Raise an error for failed requests
+        
+        # Parse the HTML using BeautifulSoup
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        # Locate the latest report section (Modify selector based on actual page structure)
+        report_section = soup.find("div", class_="article-listing")  # Example class (update if needed)
+
+        # Dictionary to store NFIB employment and business sentiment data
+        nfib_data = {
+            "Report Date": "N/A",
+            "Avg Change in Employment": "N/A",
+            "Actual Employment Changes": "N/A",
+            "Hiring Plans": "N/A",
+            "Job Openings": "N/A",
+            "% Positions Not Able to Fill": "N/A",
+            "NFIB Small Business Optimism": "N/A",
+            "Small Business Outlook": "N/A",
+            "Report Link": "N/A"
+        }
+
+        if report_section:
+            # Find the latest report title and link
+            latest_report = report_section.find("a")  # Find first report link
+            if latest_report:
+                nfib_data["Report Link"] = latest_report["href"]  # Extract the report link
+                nfib_data["Report Date"] = latest_report.text.strip()  # Extract report title (date)
+
+            # Extract employment and sentiment-related data
+            employment_section = soup.find("div", class_="employment-section")  # Example class (update as needed)
+            sentiment_section = soup.find("div", class_="sentiment-section")  # Example class (update as needed)
+
+            if employment_section:
+                text_content = employment_section.get_text(strip=True)
+
+                # Extract specific employment data (Modify based on actual report structure)
+                if "Average Change in Employment" in text_content:
+                    nfib_data["Avg Change in Employment"] = text_content.split("Average Change in Employment:")[1].split()[0]
+
+                if "Actual Employment Changes" in text_content:
+                    nfib_data["Actual Employment Changes"] = text_content.split("Actual Employment Changes:")[1].split()[0]
+
+                if "Hiring Plans" in text_content:
+                    nfib_data["Hiring Plans"] = text_content.split("Hiring Plans:")[1].split()[0]
+
+                if "Job Openings" in text_content:
+                    nfib_data["Job Openings"] = text_content.split("Job Openings:")[1].split()[0]
+
+                if "% Positions Not Able to Fill" in text_content:
+                    nfib_data["% Positions Not Able to Fill"] = text_content.split("% Positions Not Able to Fill:")[1].split()[0]
+
+            if sentiment_section:
+                sentiment_text = sentiment_section.get_text(strip=True)
+
+                # Extract business sentiment data
+                if "NFIB Small Business Optimism" in sentiment_text:
+                    nfib_data["NFIB Small Business Optimism"] = sentiment_text.split("NFIB Small Business Optimism:")[1].split()[0]
+
+                if "Small Business Outlook" in sentiment_text:
+                    nfib_data["Small Business Outlook"] = sentiment_text.split("Small Business Outlook:")[1].split()[0]
+
+        return nfib_data  # Return extracted NFIB data
+
+    except requests.RequestException as e:
+        print(f"Error fetching NFIB data: {e}")
+        return None
+
+# Function to save NFIB data to an Excel file
+def save_nfib_to_excel(nfib_data, filename="nfib_employment_data.xlsx"):
+    """
+    Saves NFIB Employment & Business Sentiment data to an Excel file.
+
+    :param nfib_data: Dictionary containing NFIB data.
+    :param filename: Name of the output Excel file.
+    """
+    if nfib_data:
+        df = pd.DataFrame([nfib_data])  # Convert dict to DataFrame
+        df.to_excel(filename, index=False, engine='openpyxl')  # Save to Excel
+        print(f"NFIB Employment & Business Sentiment data saved to {filename}")
+    else:
+        print("No data to save.")
+
+# Main execution block
+if __name__ == "__main__":
+    """
+    - Scrapes NFIB Employment and Business Sentiment data.
+    - Saves the extracted data into an Excel file.
+    """
+    nfib_data = scrape_nfib_data()
+
+    if nfib_data:  # If data is successfully fetched
+        save_nfib_to_excel(nfib_data)
+'''
