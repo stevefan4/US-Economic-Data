@@ -7,10 +7,10 @@ from fredapi import Fred  # Import Fred API to fetch economic data
 FRED_API_KEY = "YOUR_FRED_API_KEY"
 fred = Fred(api_key=FRED_API_KEY)
 
-#%% FRED Data Pull
+#%% FRED Data Pull 
 
 # Specify the path to your CSV file
-csv_file = "Data Sources.csv"  # Update the file path if needed
+csv_file = r"Downloads/Data Sources.csv"  # Update the file path if needed
 
 # Step 1: Read the CSV file into a DataFrame
 df_sources = pd.read_csv(csv_file)
@@ -31,50 +31,124 @@ def fetch_fred_data(series_dict):
     """
     data_dict = {}  # Initialize an empty dictionary to store fetched data
     
-    for indicator, series_id in series_dict.items():  # Loop through each indicator and FRED Series ID
+    for indicator, series_id in series_dict.items():
         try:
             print(f"Fetching {indicator} ({series_id})...")  # Print which series is being fetched
             data_dict[indicator] = fred.get_series(series_id)  # Fetch time-series data from FRED
-        except Exception as e:  # Handle any errors
+        except Exception as e:
             print(f"Failed to fetch {indicator}: {e}")  # Print an error message if fetching fails
             
     return data_dict  # Return the collected data
 
-# Function to convert fetched data into a DataFrame
+# Function to convert fetched data into a DataFrame and resample to daily
 def format_data_to_df(data_dict):
     """
-    Converts the fetched FRED data dictionary into a pandas DataFrame.
+    Converts the fetched FRED data dictionary into a pandas DataFrame and resamples to daily frequency.
 
     :param data_dict: Dictionary with indicator names as keys and time series data as values.
-    :return: A pandas DataFrame where each column represents an economic indicator.
+    :return: A pandas DataFrame with daily frequency and forward-filled missing values.
     """
     df = pd.DataFrame(data_dict)  # Convert dictionary to DataFrame
-    df.index = pd.to_datetime(df.index)  # Ensure the index is in datetime format (for time series analysis)
-    return df  # Return the formatted DataFrame
+    df.index = pd.to_datetime(df.index)  # Ensure index is datetime
 
-# Function to save the DataFrame to an Excel file
-def save_to_excel(df, filename="economic_data_extended.xlsx"):
+    # Define the full daily date range from the first to last available data point
+    full_date_range = pd.date_range(start=df.index.min(), end=df.index.max(), freq='D')
+
+    # Reindex the DataFrame to ensure all dates are present
+    df = df.reindex(full_date_range)
+
+    # Forward fill to propagate last known value, then backfill to fill the initial NaNs
+    df.ffill(inplace=True)
+
+    return df  # Return the daily frequency DataFrame
+
+# Function to get metadata for each FRED series
+def get_series_metadata(series_dict):
     """
-    Saves the DataFrame to an Excel file.
+    Fetches metadata for each FRED series, including first available date and frequency.
+
+    :param series_dict: Dictionary of FRED series IDs.
+    :return: A DataFrame with metadata including descriptions, first data date, and periodicity.
+    """
+    metadata_list = []
+    
+    for indicator, series_id in series_dict.items():
+        try:
+            # Fetch metadata from FRED
+            info = fred.get_series_info(series_id)
+            
+            # Get first available date
+            first_date = fred.get_series(series_id).dropna().index.min()
+            
+            # Store metadata
+            metadata_list.append({
+                "Indicator": indicator,
+                "FRED Series ID": series_id,
+                "Description": info.title if hasattr(info, 'title') else "N/A",
+                "First Available Date": first_date,
+                "Periodicity": info.frequency if hasattr(info, 'frequency') else "Unknown"
+            })
+        
+        except Exception as e:
+            print(f"Failed to fetch metadata for {indicator}: {e}")
+    
+    return pd.DataFrame(metadata_list)
+
+# Function to analyze the dataset
+def analyze_data(df):
+    """
+    Performs basic analysis on the dataset, including:
+    - Descriptive statistics (mean, min, max)
+    - Trends over time (last available value vs. historical mean)
+    """
+    analysis = {}
+    
+    for column in df.columns:
+        series = df[column].dropna()  # Drop NaNs for calculations
+        
+        if not series.empty:
+            analysis[column] = {
+                "Mean": series.mean(),
+                "Min": series.min(),
+                "Max": series.max(),
+                "Last Available Value": series.iloc[-1],
+                "YoY Change (%)": ((series.iloc[-1] - series.iloc[-365]) / series.iloc[-365] * 100) if len(series) > 365 else "N/A"
+            }
+    
+    return pd.DataFrame(analysis).T  # Transpose for better readability
+
+# Function to save the DataFrame and metadata to an Excel file
+def save_to_excel(df, metadata_df, analysis_df, filename="economic_data_extended.xlsx"):
+    """
+    Saves the DataFrame, metadata, and analysis to an Excel file.
 
     :param df: The DataFrame containing economic data.
-    :param filename: The name of the output Excel file (default is 'economic_data_extended.xlsx').
+    :param metadata_df: The DataFrame containing metadata for each series.
+    :param analysis_df: The DataFrame containing statistical analysis.
+    :param filename: The name of the output Excel file.
     """
-    df.to_excel(filename, engine='openpyxl')  # Save DataFrame to an Excel file
+    with pd.ExcelWriter(filename, engine='openpyxl') as writer:
+        df.to_excel(writer, sheet_name="FRED Data")  # Save main data
+        metadata_df.to_excel(writer, sheet_name="Metadata")  # Save metadata
+        analysis_df.to_excel(writer, sheet_name="Analysis")  # Save analysis
+    
     print(f"Data saved to {filename}")  # Print confirmation message
 
-# Main execution: Fetch data, convert it to a DataFrame, and save it
+# Main execution: Fetch data, convert it to a DataFrame, analyze, and save
 if __name__ == "__main__":
     """
     Main execution block:
     - Fetches FRED data based on the CSV file.
-    - Converts it into a structured DataFrame.
-    - Saves the data to an Excel file.
+    - Converts it into a structured DataFrame with daily frequency.
+    - Collects metadata for each series.
+    - Performs basic analysis on the data.
+    - Saves the data, metadata, and analysis to an Excel file.
     """
     data = fetch_fred_data(fred_series_dict)  # Fetch data from FRED
-    df = format_data_to_df(data)  # Convert to DataFrame
-    save_to_excel(df)  # Save DataFrame to Excel
-
+    df = format_data_to_df(data)  # Convert to daily DataFrame with forward fill
+    metadata_df = get_series_metadata(fred_series_dict)  # Fetch metadata
+    analysis_df = analyze_data(df)  # Perform analysis
+    save_to_excel(df, metadata_df, analysis_df)  # Save everything to Excel
 
 #%% ADP Data Pull
 '''
