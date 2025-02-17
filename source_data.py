@@ -32,8 +32,3 @@ if __name__ == "__main__":
     data = fetch_fred_data(FRED_SERIES_EXTENDED)
     df = format_data_to_df(data)
     save_to_excel(df)
-
-        - 10Yr Breakeven
-        - 5Yr5Yr Forward Breakeven
-
-"""
