@@ -80,36 +80,37 @@ ISM Mfg New Orders,--,ISM Manufacturing Survey,Real Economic Activity/Businesses
 ISM Svcs New Orders,--,ISM Services Survey,Real Economic Activity/Businesses/Confidence/Expectations
 NFIB Business Outlook,--,NFIB Small Business Survey,Real Economic Activity/Businesses/Confidence/Expectations
 Conf Brd LEI,--,Conference Board Leading Economic Index,Real Economic Activity/Businesses/Confidence/Expectations
-Corporate Tax Receipts,--,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Revenue
-Personal Income Tax Receipts,--,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Revenue
-Customs Duties & Tariffs Collected,--,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Revenue
-State & Local Government Tax Revenue,--,Census Bureau - State & Local Government Finances,Real Economic Activity/Government/Revenue
-Total Federal Spending,--,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Spending
-Defense Spending,--,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Spending
-Social Security & Medicare Expenditures,--,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Spending
-Infrastructure & Public Works Spending,--,Census Bureau - Construction Spending,Real Economic Activity/Government/Spending
-State & Local Government Spending,--,Census Bureau - State & Local Government Finances,Real Economic Activity/Government/Spending
-State and Local Govt Debt Outstanding,--,Federal Reserve - Financial Accounts,Real Economic Activity/Government/Deficit
-Fed Funds Rate,--,Federal Reserve - Interest Rates,Real Economic Activity/Government/Monetary & Fiscal Policy
-Money Supply,--,Federal Reserve - Money Supply,Real Economic Activity/Government/Monetary & Fiscal Policy
-Fed Balance Sheet,--,Federal Reserve - H.4.1 Release,Real Economic Activity/Government/Monetary & Fiscal Policy
-US 10Yr Yld,--,Federal Reserve - Interest Rates,Real Economic Activity/Government/Monetary & Fiscal Policy
-US 10Yr - 2Yr Spread,--,Federal Reserve - Interest Rates,Real Economic Activity/Government/Monetary & Fiscal Policy
+Corporate Tax Receipts,FCTAX,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Revenue
+Personal Income Tax Receipts,A074RC1Q027SBEA,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Revenue
+Customs Duties & Tariffs Collected,B235RC1Q027SBEA,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Revenue
+State & Local Government Tax Revenue,QTAXTOTALQTAXCAT1USYES,Census Bureau - State & Local Government Finances,Real Economic Activity/Government/Revenue
+Total Federal Spending,W019RCQ027SBEA,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Spending
+Defense Spending,G160461A027NBEA,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Spending
+Social Security Expenditures,W823RC1,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Spending
+Medicare Expenditures,W824RC1A027NBEA,Treasury - Monthly Treasury Statement,Real Economic Activity/Government/Spending
+Infrastructure & Public Works Spending,PBNRESCONS,Census Bureau - Construction Spending,Real Economic Activity/Government/Spending
+State & Local Government Spending,SLEXPND,Census Bureau - State & Local Government Finances,Real Economic Activity/Government/Spending
+State and Local Govt Debt Outstanding,SLGSDODNS,Federal Reserve - Financial Accounts,Real Economic Activity/Government/Deficit
+Fed Funds Rate,FEDFUNDS,Federal Reserve - Interest Rates,Real Economic Activity/Government/Monetary & Fiscal Policy
+Money Supply,M2SL,Federal Reserve - Money Supply,Real Economic Activity/Government/Monetary & Fiscal Policy
+Fed Balance Sheet,WALCL,Federal Reserve - H.4.1 Release,Real Economic Activity/Government/Monetary & Fiscal Policy
+US 10Yr Yld,DGS10,Federal Reserve - Interest Rates,Real Economic Activity/Government/Monetary & Fiscal Policy
+US 10Yr - 2Yr Spread,T10Y2Y,Federal Reserve - Interest Rates,Real Economic Activity/Government/Monetary & Fiscal Policy
 Government Investment in Infrastructure,--,Census Bureau - Construction Spending,Real Economic Activity/Government/Investment
 Federal R&D Spending,--,NSF - National Science Foundation,Real Economic Activity/Government/Investment
 State & Local Capital Investment in Public Services,--,Census Bureau - State & Local Government Finances,Real Economic Activity/Government/Investment
-CPI,--,BLS - Consumer Price Index,Prices/Realized Prices/Consumers/
-Core CPI,--,BLS - Consumer Price Index,Prices/Realized Prices/Consumers/
-PCE,--,BEA - Personal Income and Outlays,Prices/Realized Prices/Consumers/
-Core PCE,--,BEA - Personal Income and Outlays,Prices/Realized Prices/Consumers/
-CPI Housing Component,--,BLS - Consumer Price Index,Prices/Realized Prices/Consumers/
-PPI,--,BLS - Producer Price Index,Prices/Realized Prices/Businesses/
-Core PPI,--,BLS - Producer Price Index,Prices/Realized Prices/Businesses/
-Labor Costs (Wages),--,BLS - Employment Cost Index,Prices/Realized Prices/Businesses/
+CPI,CPIAUCSL,BLS - Consumer Price Index,Prices/Realized Prices/Consumers/
+Core CPI,CPILFESL,BLS - Consumer Price Index,Prices/Realized Prices/Consumers/
+PCE,PCEPI,BEA - Personal Income and Outlays,Prices/Realized Prices/Consumers/
+Core PCE,PCEPILFE,BEA - Personal Income and Outlays,Prices/Realized Prices/Consumers/
+CPI Housing Component,CPIHOSNS,BLS - Consumer Price Index,Prices/Realized Prices/Consumers/
+PPI,PPIACO,BLS - Producer Price Index,Prices/Realized Prices/Businesses/
+Core PPI,PPIFES,BLS - Producer Price Index,Prices/Realized Prices/Businesses/
+Labor Costs (Wages),FRBATLWGT3MMAUMHWGO,BLS - Employment Cost Index,Prices/Realized Prices/Businesses/
 Commodities (BCOM),--,Bloomberg Commodity Index,Prices/Realized Prices/Businesses/
-UMich 1Yr Inflation Expectations,--,University of Michigan Consumer Sentiment Survey,Prices/Price Expectations/Survey-Based/
+UMich 1Yr Inflation Expectations,MICH,University of Michigan Consumer Sentiment Survey,Prices/Price Expectations/Survey-Based/
 UMICH 5Yr Inflation Expectations,--,University of Michigan Consumer Sentiment Survey,Prices/Price Expectations/Survey-Based/
 NY Fed Inflation Expectations,--,NY Fed Survey of Consumer Expectations,Prices/Price Expectations/Survey-Based/
-5Yr Breakeven,--,Federal Reserve - Interest Rates,Prices/Price Expectations/Market-Based/
-10Yr Breakeven,--,Federal Reserve - Interest Rates,Prices/Price Expectations/Market-Based/
-5Yr5Yr Forward Breakeven,--,Federal Reserve - Interest Rates,Prices/Price Expectations/Market-Based/
+5Yr Breakeven,T5YIE,Federal Reserve - Interest Rates,Prices/Price Expectations/Market-Based/
+10Yr Breakeven,T10YIE,Federal Reserve - Interest Rates,Prices/Price Expectations/Market-Based/
+5Yr5Yr Forward Breakeven,T5YIFR,Federal Reserve - Interest Rates,Prices/Price Expectations/Market-Based/
